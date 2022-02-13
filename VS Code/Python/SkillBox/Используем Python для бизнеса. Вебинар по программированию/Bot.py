@@ -2,7 +2,7 @@ import telebot
 import translators
 
 
-token = "5164752718:AAGKBu37WzAKG9mP4c3EbahA1ynPvllFn2c"
+token = ""
 
 bot = telebot.TeleBot(token)
 
