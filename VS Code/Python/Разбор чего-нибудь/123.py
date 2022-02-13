@@ -4,3 +4,4 @@ for i in b:
     print(i, end=' ')
 
 print("finally")
+print('commit')
