@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Смарт-Экспресс — официальный сайт</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fixed-container {
+            width: 1000px;
+            margin: 0 auto 0 auto;
+        }
+        header {
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            margin-right: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .phone-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .phone-button button {
+            margin-left: 20px;
+            border: 1px solid gray;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 10px 30px 10px 30px;
+            cursor: pointer;
+        }
+
+        .second {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about {
+            font-size: 20px;
+            color: #303030;
+            margin: 0 30px 50px 0;
+        }
+        .btnmore {
+            text-decoration: none;
+            padding: 10px 50px 10px 50px;
+            background-color: slateblue;
+            color: white;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+        }
+        .man {
+            width: 837px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-container">
+        <nav>
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Стоимость</a>
+        </nav>
+        <div class="phone-button">
+            <div>+7 999 999-99-99</div>
+            <button>Заказать звонок</button>
+        </div>
+    </header>
+    <section class="second">
+        <div class="fio">
+            <h1 style="font-size: 55px">Данила Котеев</h1>
+            <p class="about">Full-stack бедолага и веб-мученик</p>
+            <button class="btnmore">Узнать больше</button>
+        </div>
+        <div>
+            <img  class="man" src="img/man.png" alt="мужик">
+        </div>
+    </section>
+</body>
+</html>

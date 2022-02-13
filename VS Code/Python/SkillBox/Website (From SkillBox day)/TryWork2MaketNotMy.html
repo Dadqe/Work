@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Смарт-Экспресс — официальный сайт</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fixed-container {
+            width: 1000px;
+            margin: 0 auto 0 auto;
+        }
+        header {
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            margin-right: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .phone-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .light-button {
+            margin-left: 20px;
+            border: 1px solid gray;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 10px 30px 10px 30px;
+            cursor: pointer;
+        }
+
+        .first-block {
+            height: 500px;
+            background-image: url('/img/man.png');
+            background-size: 400px;
+            background-repeat: no-repeat;
+            background-position: right center;
+
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: right;
+            
+        }
+
+        .more-info {
+            width: 260px;
+            text-decoration: none;
+            padding: 10px 50px 10px 50px;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .prof {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-right: 0px;
+        }
+
+        /* SERVICES BLOCKK STYLES */
+        .services-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 20px 0;
+        }
+        .services-list div {
+            padding-top: 160px;
+            background-size: 150px;
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        .service-1 {
+            background-image: url('/img/1.png');
+        }
+
+        .service-2 {
+            background-image: url('/img/2.png');
+        }
+
+        .service-3 {
+            background-image: url('/img/3.png');
+        }
+
+        .service-4 {
+            background-image: url('/img/4.png');
+        }
+        /* SERVICES BLOCKK STYLES */
+    </style>
+</head>
+<body>
+    <header class="fixed-container">
+        <nav>
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Стоимость</a>
+        </nav>
+        <div class="phone-button">
+            <div>+7 999 999-99-99</div>
+            <button class=light-button>Заказать звонок</button>
+        </div>
+    </header>
+    <main>
+    <section class="fixed-container first-block">
+        <div class="name">
+        <h1>Томин Дмитрий</h1>
+        <p class="prof">Fronted-разработчик и веб-верстальщик</p>
+        <button class="more-info">Узнать больше</button>
+        </div>
+     </main>>   
+    </section>
+     <!-- SERVICES BLOCK -->
+    <section class="fixed-container services-block">
+        <h2>Что я делаю</h2>
+        <div class="services-list">
+            <div class="service-1">Вёрстка лендинг-страниц<br>и сайтов любой сложности</div>
+            <div class="service-2">Адаптивная вёрстка под<br>все браузеры и устройства</div>
+            <div class="service-3">Frontend-разработка<br>и программирование</div>
+            <div class="service-4">Исправление и доработка<br>существующей вёрстки</div>
+        </div>
+        <button class="light-button">Узнать стоимость</button>
+    </section>
+    <!--/SERVICES BLOCK -->
+</body>
+</html>
