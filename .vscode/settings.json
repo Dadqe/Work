@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./VS Code/Python/Разбор чего-нибудь"
+    ]
+}
