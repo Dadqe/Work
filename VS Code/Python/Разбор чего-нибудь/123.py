@@ -2,9 +2,9 @@
 import sys
 # from a import a
 # sys.path.insert(0, 'E:/Tokens/KinoPoisk/') # PC
-# sys.path.insert(0, 'C:/Tokens/KinoPoisk/') # Laptop
-# from Token import token
-# from a import a
+sys.path.insert(0, 'C:/Tokens/KinoPoisk/') # Laptop
+from Token import token
+from a import a
 
 # "C:/Tokens/KinoPoisk/"
 
