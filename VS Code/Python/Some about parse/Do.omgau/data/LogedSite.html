@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="ru" xml:lang="ru">
+<head>
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="https://do.omgau.ru/theme/image.php/classic/theme/1636432648/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Личный кабинет" />
+<link rel="stylesheet" type="text/css" href="https://do.omgau.ru/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://do.omgau.ru/theme/styles.php/classic/1636432648_1632903508/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/do.omgau.ru","sesskey":"WbDlg5PPQl","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1636432648","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1636432648","admin":"admin","svgicons":true,"usertimezone":"\u0410\u0437\u0438\u044f\/\u041e\u043c\u0441\u043a","contextid":97858,"langrev":1646345402,"templaterev":"1636432648"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/do.omgau.ru\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/do.omgau.ru\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?m\/1636432648\/","combine":true,"comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","ext":false,"root":"m\/1636432648\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_znaniumcombook-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/do.omgau.ru\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1636432648\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/do.omgau.ru\/lib\/javascript.php\/1636432648\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/do.omgau.ru\/lib\/javascript.php\/1636432648\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-my-index" class="format-site  path-my dir-ltr lang-ru yui-skin-sam yui3-skin-sam do-omgau-ru pagelayout-mydashboard course-1 context-97858 ">
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Перейти к основному содержанию</a>
+</div><script src="https://do.omgau.ru/lib/javascript.php/1636432648/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://do.omgau.ru/lib/javascript.php/1636432648/lib/polyfills/polyfill.js"></script>
+<script src="https://do.omgau.ru/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://do.omgau.ru/lib/javascript.php/1636432648/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex">
+    
+            <a href="https://do.omgau.ru" class="navbar-brand aalink 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">ЭИОС ОмГАУ-Moodle</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-62226030639cd622260305c1c323" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Язык" aria-controls="drop-down-menu-62226030639cd622260305c1c323">
+        Русский ‎(ru)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-62226030639cd622260305c1c323" aria-labelledby="drop-down-62226030639cd622260305c1c323">
+                <a class="dropdown-item" role="menuitem" href="https://do.omgau.ru/my/index.php?lang=ru" title="Русский ‎(ru)‎">Русский ‎(ru)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://do.omgau.ru/my/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+    </div>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <div class="ml-auto">
+                
+            </div>
+            <ul class="nav navbar-nav usernav">
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                    <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="7475"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-62226030640bb622260305c1c324"
+        aria-haspopup="true"
+        aria-label="Показать окно без новых уведомлений"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw "  title="Переключить меню уведомлений" aria-label="Переключить меню уведомлений"></i>
+        <div class="count-container hidden" data-region="count-container"
+        aria-label="Непрочитанных уведомлений: 0">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-62226030640bb622260305c1c324"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Окно уведомления"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Уведомления</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Пометить все прочитанным"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Пометить все прочитанным">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+        </a>
+        <a href="https://do.omgau.ru/message/notificationpreferences.php?userid=7475"
+           title="Настройка уведомлений"
+           aria-label="Настройка уведомлений">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Уведомлений нет</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://do.omgau.ru/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Смотреть все</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-62226030647a4622260305c1c325" class="nav-link d-inline-block popover-region-toggle position-relative icon-no-margin" href="#"
+            role="button">
+        <i class="icon fa fa-comment fa-fw "  title="Переключить меню сообщений" aria-label="Переключить меню сообщений"></i>
+        <div class="count-container hidden" data-region="count-container"
+        aria-label="Непрочитанных бесед: 0">0</div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-0" aria-label="Меню пользователя" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Данил Андреевич Демин</span><span class="avatars"><span class="avatar current"><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="35" height="35" alt="" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br">
+                                                                <a href="https://do.omgau.ru/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-1">Личный кабинет</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://do.omgau.ru/user/profile.php?id=7475" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-2">О пользователе</span>
+                        </a>
+                                                                <a href="https://do.omgau.ru/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-3">Оценки</span>
+                        </a>
+                                                                <a href="https://do.omgau.ru/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-4">Сообщения</span>
+                        </a>
+                                                                <a href="https://do.omgau.ru/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-5">Настройки</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://do.omgau.ru/login/logout.php?sesskey=WbDlg5PPQl" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                <span class="menu-action-text" id="actionmenuaction-6">Выход</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                    <div class="sr-only"><h1>ЭИОС ОмГАУ-Moodle: Личный кабинет</h1></div>
+                    </div>
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="ml-auto d-flex">
+                        <div class="singlebutton">
+    <form method="post" action="https://do.omgau.ru/my/index.php" >
+            <input type="hidden" name="edit" value="1">
+            <input type="hidden" name="sesskey" value="WbDlg5PPQl">
+        <button type="submit" class="btn btn-secondary"
+            id="single_button622260305c1c31"
+            title=""
+            
+            >Настроить эту страницу</button>
+    </form>
+</div>
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row  blocks-pre   blocks-post  d-print-block">
+            <div id="region-main-box" class="region-main">
+                <section id="region-main" class="region-main-content" aria-label="Содержимое">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1"><a href="#sb-10" class="sr-only sr-only-focusable">Пропустить ‼ ОБЩАЯ ИНФОРМАЦИЯ</a>
+
+<section id="inst233269"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-233269-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-233269-header" class="card-title d-inline">‼ ОБЩАЯ ИНФОРМАЦИЯ</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><ul>
+<li>
+<h4><span style="font-size: medium;"><a href="https://www.omgau.ru/staff/lokalnye-akty/" target="_blank">Локальные нормативные акты, регламентирующие образовательный процесс</a></span></h4>
+</li>
+<li>
+<h4><span style="font-size: medium;"><a href="http://omgau.ru/sveden/eduStandarts/" target="_blank">Образовательные стандарты</a></span></h4>
+</li>
+<li>
+<h4><span style="font-size: medium;"><a href="http://omgau.ru/sveden/education/eduOp/" target="_blank">Описание образовательной программы (ОПОП, учебные планы, календарные учебные графики, рабочие программы дисциплин)</a></span></h4>
+</li>
+<li>
+<h4><span style="font-size: medium;"><a href="https://www.omgau.ru/students/raspisanie/" target="_blank">Расписание занятий</a></span></h4>
+</li>
+<li>
+<h4><span style="font-size: medium;"><a href="http://omgau.ru/sveden/grants/" target="_blank">Стипендии и меры поддержки обучающихся</a></span></h4>
+</li>
+<li>
+<h4><span style="font-size: medium;"><a href="http://omgau.ru/sveden/vacant/" target="_blank">Вакантные места для приема (перевода) обучающихся</a></span></h4>
+</li>
+</ul>
+<p></p>
+<p></p>
+<p></p></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-10"></span><a href="#sb-11" class="sr-only sr-only-focusable">Пропустить Мои курсы</a>
+
+<section id="inst233268"
+     class=" block_course_list block list_block  card mb-3"
+     role="navigation"
+     data-block="course_list"
+          aria-labelledby="instance-233268-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-233268-header" class="card-title d-inline">Мои курсы</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><a  title="АвтомМетИнжГеоРаб_21.05.01_ПрГео_2014" href="https://do.omgau.ru/course/view.php?id=4370"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Автоматизированные методы инженерно-геодезических работ</a></div></li>
+<li class="r1"><div class="column c1"><a  title="Астр_21.05.01_ПриклГеод_2015" href="https://do.omgau.ru/course/view.php?id=4196"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Астрономия</a></div></li>
+<li class="r0"><div class="column c1"><a  title="БезопЖизн_21.05.01_ПрикГеод" href="https://do.omgau.ru/course/view.php?id=3840"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Безопасность жизнедеятельности</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ВысГеодИОснКоорВремСист_21.05.01_ПрГео_2016" href="https://do.omgau.ru/course/view.php?id=4362"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Высшая геодезия и основы координатно-временных систем</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ГеоАстрОснАстр_21.05.01ПрГео_2015" href="https://do.omgau.ru/course/view.php?id=4220"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Геодезическая астрономия с основами астрометрии</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ГеодРабприВведКад_21.05.01_ПрГео_2014" href="https://do.omgau.ru/course/view.php?id=4372"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Геодезические работы при введении кадастра</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01 Геодезический мониторинг состояния сооружений и земель" href="https://do.omgau.ru/course/view.php?id=4149"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Геодезический мониторинг  состояния сооружений и земель</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ГеоинфСистИТехн_21.05.01_ПрикГеод_2013" href="https://do.omgau.ru/course/view.php?id=4200"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Геоинформационные системы и технологии</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ГИА_21.05.01_5" href="https://do.omgau.ru/course/view.php?id=4816"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Государственная итоговая аттестация</a></div></li>
+<li class="r1"><div class="column c1"><a  title="21.05.01 Инженерно-геодезические изыскания" href="https://do.omgau.ru/course/view.php?id=4150"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Инженерно-геодезические изыскания</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01 Космическая геодезия и геодинамика" href="https://do.omgau.ru/course/view.php?id=4194"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Космическая геодезия и геодинамика</a></div></li>
+<li class="r1"><div class="column c1"><a  title="МатМодГеопрострДан_21.05.01_ПрикГеод_2014" href="https://do.omgau.ru/course/view.php?id=4197"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Математическое моделирование геопространственных данных</a></div></li>
+<li class="r0"><div class="column c1"><a  title="МенМаркет_21.05.01_5" href="https://do.omgau.ru/course/view.php?id=4724"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Менеджмент и маркетинг</a></div></li>
+<li class="r1"><div class="column c1"><a  title="МетСтанСер_21.05.01_3" href="https://do.omgau.ru/course/view.php?id=5238"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Метрология, стандартизация и сертификация</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01_Микроэкономика" href="https://do.omgau.ru/course/view.php?id=3626"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Микроэкономика</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ОбщКарт_21.05.01ПрГеод_" href="https://do.omgau.ru/course/view.php?id=4189"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Общая картография</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ОснМежКом_21.05.01_" href="https://do.omgau.ru/course/view.php?id=5383"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Основы межкультурной коммуникации</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ОснНаучИссл_21.05.01_ПриклГеод_2014" href="https://do.omgau.ru/course/view.php?id=3883"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Основы научных исследований</a></div></li>
+<li class="r0"><div class="column c1"><a  title="Правовед_21.05.01ПрГеод_2013" href="https://do.omgau.ru/course/view.php?id=3721"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Правоведение</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ПрПлПерПрофУмНав_21.05.01ПрГео_2017" href="https://do.omgau.ru/course/view.php?id=4224"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Практика по получению первичных профессиональных умений и навыков, в том числе первичных умений и навыков научно-исследовательской деятельности ( 1 курс Геодезия; 2 курс Топографическое дешифрирование; 3 курс Спутниковые системы. фотограмметрия)</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01 Преддипломная практика" href="https://do.omgau.ru/course/view.php?id=4151"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Преддипломная практика</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ПрГеод_21.05.01ПрГеод_4_5" href="https://do.omgau.ru/course/view.php?id=3885"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Прикладная геодезия</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ПрикИнфВГеодез_21.05.01_ПрикГеод_2015" href="https://do.omgau.ru/course/view.php?id=4201"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Прикладная информатика в геодезии</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ПрФотИЛазСъемприСтриЭксплЗдиИС_21.05.01_ПрГео_2013" href="https://do.omgau.ru/course/view.php?id=4376"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Прикладная фотограмметрия и лазерная съемка при строительстве и эксплуатации зданий и инженерных сооружений</a></div></li>
+<li class="r0"><div class="column c1"><a  title="СпутСистТехПозиц_21.05.01ГеоДистЗонд_2015" href="https://do.omgau.ru/course/view.php?id=4219"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Спутниковые системы и технологии позиционирования</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ТеорФигПланИГрав_21.05.01_ПрГео_2013" href="https://do.omgau.ru/course/view.php?id=4374"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Теория фигур планет и гравиметрия</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01_Технологическая практика" href="https://do.omgau.ru/course/view.php?id=4373"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Технологическая практика</a></div></li>
+<li class="r1"><div class="column c1"><a  title="ТехнСтр_21.05.01_ПрГео_2014" href="https://do.omgau.ru/course/view.php?id=4369"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Технология строительства</a></div></li>
+<li class="r0"><div class="column c1"><a  title="21.05.01_Физическая культура и спорт" href="https://do.omgau.ru/course/view.php?id=3842"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Физическая культура и спорт</a></div></li>
+<li class="r1"><div class="column c1"><a  title="21.05.01_Фотограмметрия" href="https://do.omgau.ru/course/view.php?id=4365"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Фотограмметрия</a></div></li>
+<li class="r0"><div class="column c1"><a  title="Экол_21.05.01_ПрикГеод_2014" href="https://do.omgau.ru/course/view.php?id=3841"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Экология</a></div></li>
+<li class="r1"><div class="column c1"><a  title="21.05.01 Экономика и ОТГП" href="https://do.omgau.ru/course/view.php?id=4193"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Экономика и организация топографо-геодезического производства</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ЭлКурпоФизКульт_21.05.01_ПрГео_2017" href="https://do.omgau.ru/course/view.php?id=4623"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>21.05.01_Элективные курсы по физической культуре и спорту</a></div></li>
+<li class="r1"><div class="column c1"><a  title="Деканат землеустроительного факультета" href="https://do.omgau.ru/course/view.php?id=4767"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>Деканат землеустроительного факультета</a></div></li>
+<li class="r0"><div class="column c1"><a  title="Зем_КОЗ_21.05.01_ПГ" href="https://do.omgau.ru/course/view.php?id=135"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>КОЗ 21.05.01 Прикладная геодезия</a></div></li>
+<li class="r1"><div class="column c1"><a  title="Методический кабинет обучающегося" href="https://do.omgau.ru/course/view.php?id=4428"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>Методический кабинет обучающегося</a></div></li>
+<li class="r0"><div class="column c1"><a  title="ОПОП_21.05.01" href="https://do.omgau.ru/course/view.php?id=5637"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>ОПОП_21.05.01_Прикладная геодезия </a></div></li>
+<li class="r1"><div class="column c1"><a  title="ФОС компетенций" href="https://do.omgau.ru/course/view.php?id=8971"><i class="icon fa fa-graduation-cap fa-fw "  title="Курс" aria-label="Курс"></i>ФОС компетенций</a></div></li></ul>
+            <div class="footer"><a href="https://do.omgau.ru/course/index.php">Все курсы</a> ...</div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-11"></span><a href="#sb-12" class="sr-only sr-only-focusable">Пропустить Сводка по курсам</a>
+
+<section id="inst233266"
+     class=" block_myoverview block  card mb-3"
+     role="complementary"
+     data-block="myoverview"
+          aria-labelledby="instance-233266-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-233266-header" class="card-title d-inline">Сводка по курсам</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="block-myoverview-6222603062ac2622260305c1c318" class="block-myoverview block-cards" data-region="myoverview" role="navigation">
+
+            <div data-region="filter" class="d-flex align-items-center flex-wrap" aria-label="Элементы управления обзором курса">
+                <div class="dropdown mb-1 mr-auto">
+                    <button id="groupingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Раскрывающееся меню группирования.">
+                        <i class="icon fa fa-filter fa-fw " aria-hidden="true"  ></i>
+                        <span class="d-sm-inline-block" data-active-item-text>
+                            
+                            Все (кроме скрытых)
+                            
+                            
+                            
+                            
+                            
+                            
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" data-active-item-text aria-labelledby="groupingdropdown">
+                        <li class="dropdown-divider" role="presentation">
+                            <span class="filler">&nbsp;</span>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="Все курсы, кроме скрытых" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                                Все (кроме скрытых)
+                            </a>
+                        </li>
+                        <li class="dropdown-divider" role="presentation">
+                            <span class="filler">&nbsp;</span>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Показать текущие курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                Текущие
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Показать будущие курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                Предстоящие
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Показать прошлые курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                Прошедшие
+                            </a>
+                        </li>
+                        <li class="dropdown-divider" role="presentation">
+                            <span class="filler">&nbsp;</span>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="favourites"  data-pref="favourites" aria-label="Показать избранные курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                Избранное
+                            </a>
+                        <li class="dropdown-divider" role="presentation">
+                            <span class="filler">&nbsp;</span>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="hidden"  data-pref="hidden" aria-label="Показать курсы, скрытые от просмотра" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                Скрытые
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="mb-1 mr-1 d-flex align-items-center">
+                    <div class="dropdown">
+                        <button id="sortingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" aria-label="Сортировать раскрывающийся список">
+                            <i class="icon fa fa-sort-amount-asc fa-fw " aria-hidden="true"  ></i>
+                            <span class="d-sm-inline-block" data-active-item-text>
+                                Название курса
+                                
+                                
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="sortingdropdown">
+                            <li>
+                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-label="Сортировать курсы по их названию" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                                    Название курса
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-label="Сортировать курсы по дате последнего посещения" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                    Последнее посещение
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="dropdown mb-1">
+                        <button id="displaydropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        aria-label="Показать раскрывающийся список">
+                            <i class="icon fa fa-th fa-fw " aria-hidden="true"  ></i>
+                            <span class="d-sm-inline-block" data-active-item-text>
+                                Карточка
+                                
+                                
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="displaydropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="card" data-pref="card" aria-label="Перейти к просмотру карт" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                                        Карточка
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="list" data-pref="list" aria-label="Перейти к просмотру списка" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                        Список
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="summary" data-pref="summary" aria-label="Перейти к просмотру сводок" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                        Описание
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </div>
+
+    <div class="container-fluid p-0">
+        <div id="courses-view-6222603062ac2622260305c1c318"
+            data-region="courses-view"
+            data-display="card"
+            data-grouping="all"
+            data-customfieldname=""
+            data-customfieldvalue=""
+            data-sort="fullname"
+            data-prev-display="card"
+            data-paging="0"
+            data-nocoursesimg="https://do.omgau.ru/theme/image.php/classic/block_myoverview/1636432648/courses"
+            data-totalcoursecount="39"
+            data-displaycategories="on">
+            <div data-region="course-view-content">
+                <div data-region="loading-placeholder-content" aria-hidden="true">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-12"></span><a href="#sb-13" class="sr-only sr-only-focusable">Пропустить Недавно посещенные курсы</a>
+
+<section id="inst233267"
+     class=" block_recentlyaccessedcourses block  card mb-3"
+     role="complementary"
+     data-block="recentlyaccessedcourses"
+          aria-labelledby="instance-233267-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-233267-header" class="card-title d-inline">Недавно посещенные курсы</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="block-recentlyaccessedcourses-62226030630a7622260305c1c319" class="block-recentlyaccessedcourses block-cards" data-region="recentlyaccessedcourses"
+        data-userid="7475" data-displaycoursecategory="1">
+    <div class="container-fluid p-0">
+        <div id="recentlyaccessedcourses-view-62226030630a7622260305c1c319" data-region="recentlyaccessedcourses-view">
+            <div data-region="loading-placeholder">
+                <div class="card-deck dashboard-card-deck one-row overflow-hidden" style="height: 13.05rem">
+                    <div class="card dashboard-card border-0">
+                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+                        </div>
+                        <div class="card-body pr-1 course-info-container">
+                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+                        </div>
+                    </div>
+                    <div class="card dashboard-card border-0">
+                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+                        </div>
+                        <div class="card-body pr-1 course-info-container">
+                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+                        </div>
+                    </div>
+                    <div class="card dashboard-card border-0">
+                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+                        </div>
+                        <div class="card-body pr-1 course-info-container">
+                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+                        </div>
+                    </div>
+                    <div class="card dashboard-card border-0">
+                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+                        </div>
+                        <div class="card-body pr-1 course-info-container">
+                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" data-region="view-content">
+                    <div class="d-flex paging-bar-container mb-3" data-region="paging-bar-container">
+                        <div
+                            data-region="paging-control-container"
+                            class="d-flex"
+                        >
+                        
+                            <nav
+                                id="paging-bar-62226030630a7622260305c1c319"
+                                class=""
+                                data-region="paging-bar"
+                                data-ignore-control-while-loading=""
+                                data-hide-control-on-single-page=""
+                                    data-active-page-number="1"
+                                    aria-label="Нумерация страниц"
+                                    data-aria-label-components-pagination-item="pagedcontentnavigationitem, core"
+                                    data-aria-label-components-pagination-active-item="pagedcontentnavigationactiveitem, core"
+                            >
+                        
+                                <ul class="pagination mb-0">
+                                                                <li class="page-item  "
+                            data-region="page-item"
+                            data-control="previous">
+                        
+                            <a href="#"
+                               class="page-link"
+                               data-region="page-link" aria-label="Предыдущая страница">
+                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                            </a>
+                        </li>
+                                        <li class="page-item  "
+                            data-region="page-item"
+                            data-control="next">
+                        
+                            <a href="#"
+                               class="page-link"
+                               data-region="page-link" aria-label="Следующая страница">
+                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                            </a>
+                        </li>
+        </ul>
+                            </nav>
+                        </div>
+                    </div>
+                        
+        <div class="card-deck dashboard-card-deck one-row fixed-width-cards justify-content-center overflow-hidden" data-region="card-deck" role="list">
+        </div>
+    </div>
+            <div class="hidden text-xs-center text-center mt-3" data-region="empty-message">
+                <img class="empty-placeholder-image-lg mt-1"
+                    src="https://do.omgau.ru/theme/image.php/classic/block_recentlyaccessedcourses/1636432648/courses"
+                    alt="">
+                <p class="text-muted mt-3">Нет недавно посещенных курсов</p>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-13"></span></aside></div>
+                    
+                    
+                </section>
+            </div>
+            <div class="columnleft blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Блоки">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Пропустить Основное меню</a>
+
+<section id="inst1"
+     class=" block_site_main_menu block list_block  card mb-3"
+     role="complementary"
+     data-block="site_main_menu"
+          aria-labelledby="instance-1-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-1-header" class="card-title d-inline">Основное меню</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a class="aalink" onclick="" href="https://do.omgau.ru/mod/forum/view.php?id=382"><img src="https://do.omgau.ru/theme/image.php/classic/forum/1636432648/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Новости сайта<span class="accesshide " > Форум</span></span></a></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a class="aalink" onclick="window.open(&#039;https://do.omgau.ru/mod/url/view.php?id=28885&amp;redirect=1&#039;, &#039;&#039;, &#039;width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes&#039;); return false;" href="https://do.omgau.ru/mod/url/view.php?id=28885"><img src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Корпоративная почта (omgau.org)<span class="accesshide " > Гиперссылка</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a class="aalink" onclick="window.open(&#039;https://do.omgau.ru/mod/url/view.php?id=119469&amp;redirect=1&#039;, &#039;&#039;, &#039;width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes&#039;); return false;" href="https://do.omgau.ru/mod/url/view.php?id=119469"><img src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">СОВРЕМЕННЫЕ ПРОФЕССИОНАЛЬНЫЕ БАЗЫ ДАННЫХ<span class="accesshide " > Гиперссылка</span></span></a></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="contentwithoutlink "><div class="no-overflow"><div class="no-overflow"><h5><span style="font-size: small;">В период неблагоприятной эпидемиологической ситуации занятия по дисциплинам (по заранее согласованному расписанию) могут проходить в формате онлайн-вебинаров. Ссылки на подключение к вебинарам размещаются в электронных курсах дисциплин, а также дублируются на корпоративные e-mail студентов</span></h5></div></div></div></div></div></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">Пропустить Навигация</a>
+
+<section id="inst4"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+          aria-labelledby="instance-4-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4-header" class="card-title d-inline">Навигация</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random622260305c1c33_group" data-collapsible="false" aria-labelledby="random622260305c1c32_label_1_1"><p class="tree_item branch canexpand navigation_node"><a tabindex="-1" id="random622260305c1c32_label_1_1" href="https://do.omgau.ru/my/">Личный кабинет</a></p><ul id="random622260305c1c33_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c34_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c34_label_2_2" href="https://do.omgau.ru/?redirect=0"><i class="icon fa fa-home fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Домашняя страница</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random622260305c1c36_group" aria-labelledby="random622260305c1c34_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random622260305c1c34_label_2_3" title="Электронная информационно-образовательная среда ФГБОУ ВО Омский ГАУ (ОмГАУ_Moodle)">Страницы сайта</span></p><ul id="random622260305c1c36_group" role="group" aria-hidden="true"><li class="type_unknown depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_5" href="https://do.omgau.ru/blog/index.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Блоги сайта</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_6" href="https://do.omgau.ru/badges/view.php?type=1"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Значки сайта</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_7"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_7" href="https://do.omgau.ru/tag/search.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Теги</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_8"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_8" href="https://do.omgau.ru/calendar/view.php?view=month"><i class="icon fa fa-calendar fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Календарь</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_10"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_10" title="Форум" href="https://do.omgau.ru/mod/forum/view.php?id=382"><img class="icon navicon" alt="Форум" title="Форум" src="https://do.omgau.ru/theme/image.php/classic/forum/1636432648/icon" /><span class="item-content-wrap">Новости сайта</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_11"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=28885" id="random622260305c1c37_label_3_11" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">Корпоративная почта (omgau.org)</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_12"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=119469" id="random622260305c1c37_label_3_12" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">СОВРЕМЕННЫЕ ПРОФЕССИОНАЛЬНЫЕ БАЗЫ ДАННЫХ</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random622260305c1c315_group" aria-labelledby="random622260305c1c34_label_2_17"><p class="tree_item branch"><span tabindex="-1" id="random622260305c1c34_label_2_17">Мои курсы</span></p><ul id="random622260305c1c315_group" role="group"><li class="type_custom depth_3 item_with_icon current_branch" role="treeitem" aria-labelledby="random622260305c1c316_label_3_18"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random622260305c1c316_label_3_18" href="https://do.omgau.ru/my/"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Больше...</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0" aria-labelledby="random622260305c1c34_label_2_19"><p class="tree_item branch" id="expandable_branch_0_courses"><a tabindex="-1" id="random622260305c1c34_label_2_19" href="https://do.omgau.ru/course/index.php">Курсы</a></p></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span><a href="#sb-4" class="sr-only sr-only-focusable">Пропустить Ресурсы</a>
+
+<section id="inst641"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-641-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-641-header" class="card-title d-inline">Ресурсы</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><p><img src="https://do.omgau.ru/pluginfile.php/1221/block_html/content/logo_omgau.png" height="25" width="45" /> <a target="_blank" href="http://www.omgau.ru">Официальный сайт ОмГАУ</a></p>
+<p><img src="https://do.omgau.ru/pluginfile.php/1221/block_html/content/lib.png" height="34" width="45" /> <a target="_blank" href="http://lib.omgau.ru">НСХ Библиотека</a></p>
+<p><img src="https://do.omgau.ru/pluginfile.php/1221/block_html/content/book3.png" height="45" width="45" /><a target="_blank" href="http://e-journal.omgau.ru/"> Электронный научный журнал</a></p>
+<h4>Электронные информационные ресурсы</h4>
+<p><a href="https://minobrnauki.gov.ru/" target="_blank">Министерство науки и высшего образования РФ</a></p>
+<p><a href="http://mcx.ru/" target="_blank">Министерство сельского хозяйства Российской Федерации</a></p>
+<p><a href="http://www.edu.ru/" target="_blank">Федеральный портал "Российское образование"</a></p>
+<p><a href="http://window.edu.ru/" target="_blank">Единое окно доступа к образовательным ресурсам</a></p>
+<p><a href="http://fcior.edu.ru/" target="_blank">Федеральный центр информационно-образовательных ресурсов</a></p>
+<p><a href="http://www.studentlibrary.ru/" target="_blank">Электронно-библиотечная система «Электронная библиотека технического ВУЗа» («Консультант студента»)</a></p>
+<p><a href="http://znanium.com/" target="_blank">Электронно-библиотечная система Znanium.com</a></p>
+<p><a href="https://e.lanbook.com/" target="_blank">Электронно-библиотечная система издательства «Лань»</a></p>
+<p><a href="http://www.fgosvo.ru/" target="_blank">Портал федеральных государственных стандартов высшего образования</a></p></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-4"></span><a href="#sb-5" class="sr-only sr-only-focusable">Пропустить Exabis E-Portfolio</a>
+
+<section id="inst157829"
+     class=" block_exaport block list_block  card mb-3"
+     role="complementary"
+     data-block="exaport"
+          aria-labelledby="instance-157829-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-157829-header" class="card-title d-inline">Exabis E-Portfolio</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><a title="Мое резюме"  href="https://do.omgau.ru/blocks/exaport/resume.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/resume" class="icon" alt="" />Мое резюме</a></div></li>
+<li class="r1"><div class="column c1"><a title="Exabis E-Portfolio: Добавьте сюда свои ссылки и файлы."  href="https://do.omgau.ru/blocks/exaport/view_items.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/my_portfolio" class="icon" alt="" />Артефакты моего портфолио</a></div></li>
+<li class="r0"><div class="column c1"><a title="Виды"  href="https://do.omgau.ru/blocks/exaport/views_list.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/myviews" class="icon" alt="" />Виды</a></div></li>
+<li class="r1"><div class="column c1"><a title="Общие просмотры"  href="https://do.omgau.ru/blocks/exaport/shared_views.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/shared_views" class="icon" alt="" />Общие просмотры</a></div></li>
+<li class="r0"><div class="column c1"><a title="Общие категории"  href="https://do.omgau.ru/blocks/exaport/shared_categories.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/shared_categories" class="icon" alt="" />Общие категории</a></div></li>
+<li class="r1"><div class="column c1"><a title="Импорт/Экспорт"  href="https://do.omgau.ru/blocks/exaport/importexport.php?courseid=1"><img src="https://do.omgau.ru/theme/image.php/classic/block_exaport/1636432648/importexport" class="icon" alt="" />Импорт/Экспорт</a></div></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-5"></span></aside>
+                </section>
+            </div>
+
+            <div class="columnright blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Блоки">
+                    <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><a href="#sb-6" class="sr-only sr-only-focusable">Пропустить Проект "Кампусная карта"</a>
+
+<section id="inst152169"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-152169-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-152169-header" class="card-title d-inline">Проект "Кампусная карта"</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><table border="0">
+<tbody>
+<tr>
+<td>
+<h5 align="center"><span style="font-size: small;"><b>Уважаемые обучающиеся!</b></span></h5>
+<h5><span style="font-size: small;">Наш университет реализует проект «Кампус будущего». Кроме прочего, в рамках проекта будет реализована идея создания единой цифровой экосистемы, которая включает в себя: систему контроля доступа в корпусы и общежития (окончание этапа в 2021 г.); электронный читательский билет; электронная зачетная книжка; управление системой «умный дом» (устанавливается в общежитиях 1 и 2); сервис «Омский ГАУ-бонус» (скидки для студентов и сотрудников на услуги нашего вуза) и т.д. <a href="https://drive.google.com/file/d/1e0sOi5fdvsluOFrZl-FgRE_BGgYPQAam/view?usp=sharing" target="_blank">Подробнее ....</a></span></h5>
+<h5><strong><span style="font-size: small;"><a href="https://drive.google.com/file/d/1YozNTm_etR4bMS3DLlApxyoOPccuWWgt/view?usp=sharing" target="_blank">Бланк анкеты для выпуска кампусной карты</a></span></strong></h5>
+<h5><strong><span style="font-size: small;"><a href="https://drive.google.com/file/d/1aeY-ljMHOgiXvdUMOgTm69Z2Pbx52afL/view?usp=sharing" target="_blank">Бланк заявления на закрытие кампусной карты</a></span></strong></h5>
+</td>
+</tr>
+</tbody>
+</table></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-6"></span><a href="#sb-7" class="sr-only sr-only-focusable">Пропустить Служба поддержки</a>
+
+<section id="inst638"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-638-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-638-header" class="card-title d-inline">Служба поддержки</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><p><a href="https://drive.google.com/file/d/1e1TXMeOKyxQS4zqr5kOc9HoLngfYR-sZ/view?usp=sharing" target="_blank">Общие правила работы_ЭИОС и корпоративная почта</a><a href="https://drive.google.com/file/d/1_4yQOUqeCLEKo7C-Q7IR6UdOUmDQJ5ZT/view?usp=sharing" target="_blank"></a></p>
+<p><a href="https://drive.google.com/file/d/1b_lpjGlbSMRp3WAkX6XhWNApdyZHCIXI/view?usp=sharing" target="_blank">Порядок действий обучающегося в электронной информационно-образовательной среде  университета</a></p>
+<p><a href="https://drive.google.com/file/d/1y4az_PKCPFtvIoTELnc4F9Dt8B01llkA/view?usp=sharing" target="_blank">Инструкция по восстановлению логина и пароля в ЭИОС</a></p>
+<p><a href="https://drive.google.com/file/d/1LhCno4tzfIpX6iIxkZMP03dPGDGji0fk/view?usp=sharing" target="_blank">Инструкция по восстановлению учетной записи в почтовом сервисе университета (корпоративная почта)</a></p>
+<p><a href="https://drive.google.com/file/d/1qNxX_p3-DCIJALRz8y-DJ6QSAUCbHZHY/view?usp=sharing" target="_blank">Инструкция по прикреплению файла с выполненной работой</a></p>
+<p><span class="nolink"><a href="https://docs.google.com/document/d/13EjkGXwlUygp9SEd7lDPy2hFb2RKIeNV/edit?usp=sharing&amp;ouid=110223864928077010257&amp;rtpof=true&amp;sd=true" target="_blank">Инструкция для обучающихся Омского ГАУ по организации образовательного процесса с применением дистанционных образовательных технологий </a> <a href="https://drive.google.com/file/d/1INT49TENUrge_2iD9VlDzYdTexCBsxzZ/view?usp=sharing" target="_blank"></a></span><a href="https://docs.google.com/document/d/1dv-B1870H_tTBvAO9pqDK1jbugqrLmbCeEXUn9bR2jU/edit?usp=sharing" target="_blank"></a></p>
+<p><strong>Служба технической поддержки:</strong></p>
+<p><span style="text-decoration: underline;"><span style="color: #008000;"><strong><strong>Работа в ЭИОС ОмГАУ-Moodle</strong></strong></span></span></p>
+<p><span style="color: #008000;"><strong><strong>Студентам</strong></strong></span></p>
+<ul>
+<li><a href="https://docs.google.com/document/d/1TrW6XvFDa9VqOqx8x0yli5nZSVuXzRQm4dW3MO1O5Aw/edit?usp=sharing" target="_blank"><strong><strong><span class="nolink">способы и порядок поддержки при использовании ЭИОС ОмГАУ-Moodle</span></strong></strong></a></li>
+</ul>
+<p><strong><strong><span class="nolink">       <span style="font-size: xx-small;">____________________________________</span></span></strong></strong></p>
+<ul>
+<li><strong><strong><a href="https://docs.google.com/document/d/1FOUpSbg7ItXkhD56ffatKVNcHrpAZMqc/edit?usp=sharing&amp;ouid=110223864928077010257&amp;rtpof=true&amp;sd=true" target="_blank"><span class="nolink">ответственные по работе в ЭИОС по направлениям подготовки/специальностям</span></a><a href="https://drive.google.com/file/d/1bxI_CVE0AMCAQOhx9L7JbU-3VIZp-UDr/view?usp=sharing" target="_blank"> </a></strong></strong>(вход в ЭИОС, отсутствие необходимых дисциплин в Личном кабинете и пр.) </li>
+<li><b><a href="https://docs.google.com/document/d/1EeDvC2oW-SHijN7jEPDjW3h6tj164jW0/edit?usp=sharing&amp;ouid=110223864928077010257&amp;rtpof=true&amp;sd=true" target="_blank">о</a></b><strong><a href="https://docs.google.com/document/d/1EeDvC2oW-SHijN7jEPDjW3h6tj164jW0/edit?usp=sharing&amp;ouid=110223864928077010257&amp;rtpof=true&amp;sd=true" target="_blank">тветственные за контроль наличия у обучающихся сформированных результатов обучения по ранее изученным дисциплинам  по программам ВО и СПО</a> </strong></li>
+</ul>
+<p><b>      _________________________</b></p>
+<ul>
+<li><strong><strong>общее администрирование ЭИОС</strong> - </strong><em>Филатова Лина Михайловна</em>,<strong>  </strong>lm.filatova@omgau.org, гл.корпус, ауд.315</li>
+</ul>
+<p><strong>При обращении, пожалуйста указывайте: факультет, направление, год поступления, № группы, фамилию, имя, отчество, описание проблемы.</strong></p>
+<p><strong style="color: #008000;">Преподавателям</strong></p>
+<ul>
+<li><strong></strong><strong><a href="https://drive.google.com/file/d/1pQ8ydGoQMUC1e4-BdQ7-lNTP6hvlau2B/view?usp=sharing" target="_blank">ответственные по работе в ЭИОС по направлениям подготовки/специальностям</a> </strong>(отсутствие необходимых дисциплин в Личном кабинете, формирование структуры курса, отсутствие группы студентов и пр.) </li>
+<li><strong>программы бакалавриата, магистратуры, специалитета</strong>  - <em>Ковальчук Наталья Сергеевна</em>,  <span>ns.kovalchuk</span><span>@omgau.org, гл.корпус, ауд.425, Беккер Наталья Сергеевна, ns.bekker@omgau.org, гл.корпус, ауд.425, Богуславская Анна Сергеевна, as.boguslavskaya@omgau.org, гл.корпус, ауд. 321</span></li>
+<li><span><strong>программы аспирантуры</strong> - Земченкова Ольга Николаевна, <a jsname="YheIzf" class="rABsFf RffVmb AL18ce" target="_blank" jslog="35051; track:click,impression" data-tooltip-position="top" href="mailto:on.zemchenkova@omgau.org" data-tooltip="Из рабочего профиля">on.zemchenkova@omgau.org</a>, гл.корпус, ауд. 222/1</span></li>
+<li><strong>общее администрирование ЭИОС - </strong><em>Филатова Лина Михайловна</em>,<strong>  </strong>lm.filatova@omgau.org, гл.корпус, ауд.315</li>
+<li><a href="https://drive.google.com/file/d/1vdJmGiprWFiQNa09JTMG3S8LxVjXnOPP/view?usp=sharing" target="_blank">Порядок действий преподавателя в ЭИОС ОмГАУ-Moodle</a></li>
+<li><a href="https://drive.google.com/file/d/1kFDWJlLQH89SL9Tj-0EwYw-0JwMw7xIv/view?usp=sharing" target="_blank">Порядок действий ответственного по направлению подготовки/специальности за работу в  ЭИОС ОмГАУ-Moodle </a></li>
+</ul>
+<p><span style="text-decoration: underline;"><strong style="color: #008000; text-decoration: underline;">Работа в корпоративной почте:</strong></span></p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1F0oykrrAYnM6F45-EfUcpiRmCoN9e-7m/view?usp=sharing" target="_blank"><strong>Регламент активации и восстановления доступа в систему корпоративной почты на домене omgau.org</strong></a></li>
+<li><strong>деканат факультета </strong>(первоначальная информация о логине и пароле)</li>
+<li><strong>управление информационных технологий</strong>  (сброс забытого пароля) - <strong>ауд. 237 </strong> в здании Научной сельскохозяйственной библиотеки</li>
+</ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-7"></span><a href="#sb-8" class="sr-only sr-only-focusable">Пропустить Массовые открытые онлайн-курсы</a>
+
+<section id="inst101750"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-101750-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-101750-header" class="card-title d-inline">Массовые открытые онлайн-курсы</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><p><a href="https://drive.google.com/file/d/15jcjvSLYIeu7hPht5fcT-V01Js-Ml4wW/view?usp=sharing" target="_blank"><strong><b>Положение об использовании массовых открытых онлайн-курсов в учебном процессе ФГБОУ ВО Омский ГАУ</b></strong></a></p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1bM5wXSWS7KA9QRuCz2CYmQ5iuLyP749l/view?usp=sharing" target="_blank"><span style="font-size: 1rem;">Перечень МООК, рекомендованных в качестве учебно-методического обеспечения учебных дисциплин, реализуемых во II полугодии 2021-22 уч.г.</span></a></li>
+<li>
+<p><a href="https://drive.google.com/file/d/1dZLGwYzTWaVhiGOWLle3Z8I9xrh_zTmr/view?usp=sharing" target="_blank">Перечень МООК, рекомендованных для зачета результатов индивидуального освоения МООК (подтвержденных сертификатом), по дисциплинам реализуемым во II полугодии 2021-22 уч.г.</a></p>
+</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1fkNoX7sYPlrgNASFLqRWGCg5U2_KLkbf/view?usp=sharing" target="_blank"><strong> </strong></a></p></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-8"></span><a href="#sb-9" class="sr-only sr-only-focusable">Пропустить Пользователи на сайте</a>
+
+<section id="inst233265"
+     class=" block_online_users block  card mb-3"
+     role="complementary"
+     data-block="online_users"
+          aria-labelledby="instance-233265-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-233265-header" class="card-title d-inline">Пользователи на сайте</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="info">Пользователей на сайте: 11 (последние 5 минут)</div><ul class='list'>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7475&amp;course=1" title="сейчас"><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Данил Андреевич Демин</a></div><div class="uservisibility"><a title="Скрыть моё присутствие на сайте от других пользователей" data-action="hide" data-userid="7475" id="change-user-visibility" href=""><i class="icon fa fa-eye fa-fw "  title="Скрыть моё присутствие на сайте от других пользователей" aria-label="Скрыть моё присутствие на сайте от других пользователей"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25086&amp;course=1" title="11 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Дмитрий Владимирович Руль</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25086"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24073&amp;course=1" title="1 мин. 48 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Максим Евгеньевич Кузнецов</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24073"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=18871&amp;course=1" title="2 мин. 8 сек."><img src="https://do.omgau.ru/pluginfile.php/229669/user/icon/classic/f2?rev=345907" class="userpicture" width="16" height="16" alt="" />Кирилл Алексеевич Тетерев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=18871"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24121&amp;course=1" title="2 мин. 19 сек."><img src="https://do.omgau.ru/pluginfile.php/507044/user/icon/classic/f2?rev=684339" class="userpicture" width="16" height="16" alt="" />Екатерина Николаевна Стойчева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24121"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=85&amp;course=1" title="2 мин. 39 сек."><img src="https://do.omgau.ru/pluginfile.php/1746/user/icon/classic/f2?rev=179021" class="userpicture" width="16" height="16" alt="" />Ольга Николаевна Долматова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=85"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19533&amp;course=1" title="3 мин. 29 сек."><img src="https://do.omgau.ru/pluginfile.php/248053/user/icon/classic/f2?rev=399661" class="userpicture" width="16" height="16" alt="" />Юлия Алексеевна Елохова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19533"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25626&amp;course=1" title="3 мин. 37 сек."><img src="https://do.omgau.ru/pluginfile.php/509384/user/icon/classic/f2?rev=772270" class="userpicture" width="16" height="16" alt="" />Гульжан Шайдуловна Мутинова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25626"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=1927&amp;course=1" title="4 мин."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Жанбота Бауржановна Есмурзаева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=1927"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7797&amp;course=1" title="4 мин. 28 сек."><img src="https://do.omgau.ru/pluginfile.php/98218/user/icon/classic/f2?rev=248990" class="userpicture" width="16" height="16" alt="" />Зоя Сергеевна Никонова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=7797"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19135&amp;course=1" title="5 мин. 9 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Алёна Валерьевна Шукайло</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19135"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+</ul><div class="clearer"><!-- --></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-9"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div
+    id="drawer-6222603065adf622260305c1c334"
+    class=" drawer bg-white hidden"
+    aria-expanded="false"
+    aria-hidden="true"
+    data-region="right-hand-drawer"
+    role="region"
+    tabindex="0"
+>
+            <div id="message-drawer-6222603065adf622260305c1c334" class="message-app" data-region="message-drawer" role="region">
+            <div class="closewidget text-right pr-2">
+                <a class="text-dark btn-link" data-action="closedrawer" href="#"
+                   title="Закрыть" aria-label="Закрыть"
+                >
+                    <i class="icon fa fa-window-close fa-fw " aria-hidden="true"  ></i>
+                </a>
+            </div>
+            <div class="header-container position-relative" data-region="header-container">
+                <div class="hidden border-bottom p-1 px-sm-2" aria-hidden="true" data-region="view-contacts">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch">
+                            <a class="h-100 d-flex align-items-center mr-2" href="#" data-route-back role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Собеседники
+                        </div>
+                        <div class="ml-auto">
+                            <a href="#" data-route="view-search" role="button" aria-label="Поиск">
+                                <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+                <div
+                    class="hidden bg-white position-relative border-bottom p-1 px-sm-2"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                >
+                    <div class="hidden" data-region="header-content"></div>
+                    <div class="hidden" data-region="header-edit-mode">
+                        
+                        <div class="d-flex p-2 align-items-center">
+                            Выбранные сообщения:
+                            <span class="ml-1" data-region="message-selected-court">1</span>
+                            <button type="button" class="ml-auto close" aria-label="Отменить выбор сообщения"
+                                data-action="cancel-edit-mode">
+                                    <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-region="header-placeholder">
+                        <div class="d-flex">
+                            <div
+                                class="ml-2 rounded-circle bg-pulse-grey align-self-center"
+                                style="height: 38px; width: 38px"
+                            >
+                            </div>
+                            <div class="ml-2 " style="flex: 1">
+                                <div
+                                    class="mt-1 bg-pulse-grey w-75"
+                                    style="height: 16px;"
+                                >
+                                </div>
+                            </div>
+                            <div
+                                class="ml-2 bg-pulse-grey align-self-center"
+                                style="height: 16px; width: 20px"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                <div class="border-bottom p-1 px-sm-2" aria-hidden="false"  data-region="view-overview">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group simplesearchform">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Поиск"
+                                aria-label="Поиск"
+                                data-region="view-overview-search-input"
+                            >
+                            <div class="input-group-append">
+                                <span class="icon-no-margin btn btn-submit">
+                                    <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ml-2">
+                            <a
+                                href="#"
+                                data-route="view-settings"
+                                data-route-param="7475"
+                                aria-label="Настройки"
+                                role="button"
+                            >
+                                <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-right mt-sm-3">
+                        <a href="#" data-route="view-contacts" role="button">
+                            <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                            Собеседники
+                            <span class="badge badge-primary bg-primary ml-2 hidden"
+                            data-region="contact-request-count"
+                            aria-label="Ожидающих запросов на добавление в собеседники: 0">
+                                0
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden border-bottom p-1 px-sm-2 view-search"  aria-hidden="true" data-region="view-search">
+                    <div class="d-flex align-items-center">
+                        <a
+                            class="mr-2 align-self-stretch d-flex align-items-center"
+                            href="#"
+                            data-route-back
+                            data-action="cancel-search"
+                            role="button"
+                        >
+                            <div class="icon-back-in-drawer">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                            </div>
+                            <div class="icon-back-in-app">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                            </div>                        </a>
+                        <div class="input-group simplesearchform">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Поиск"
+                                aria-label="Поиск"
+                                data-region="search-input"
+                            >
+                            <div class="input-group-append">
+                                <button
+                                    class="btn btn-submit icon-no-margin"
+                                    type="button"
+                                    data-action="search"
+                                    aria-label="Поиск"
+                                >
+                                    <span data-region="search-icon-container">
+                                        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                    </span>
+                                    <span class="hidden" data-region="loading-icon-container">
+                                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="hidden border-bottom p-1 px-sm-2 pb-sm-3" aria-hidden="true" data-region="view-settings">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch" >
+                            <a class="h-100 d-flex mr-2 align-items-center" href="#" data-route-back role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Настройки
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container position-relative" data-region="body-container">
+                
+                <div
+                    class="hidden"
+                    data-region="view-contact"
+                    aria-hidden="true"
+                >
+                    <div class="p-2 pt-3" data-region="content-container"></div>
+                </div>                <div class="hidden h-100" data-region="view-contacts" aria-hidden="true" data-user-id="7475">
+                    <div class="d-flex flex-column h-100">
+                        <div class="p-3 border-bottom">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        id="contacts-tab-6222603065adf622260305c1c334"
+                                        class="nav-link active"
+                                        href="#contacts-tab-panel-6222603065adf622260305c1c334"
+                                        data-toggle="tab"
+                                        data-action="show-contacts-section"
+                                        role="tab"
+                                        aria-controls="contacts-tab-panel-6222603065adf622260305c1c334"
+                                        aria-selected="true"
+                                    >
+                                        Собеседники
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        id="requests-tab-6222603065adf622260305c1c334"
+                                        class="nav-link"
+                                        href="#requests-tab-panel-6222603065adf622260305c1c334"
+                                        data-toggle="tab"
+                                        data-action="show-requests-section"
+                                        role="tab"
+                                        aria-controls="requests-tab-panel-6222603065adf622260305c1c334"
+                                        aria-selected="false"
+                                    >
+                                        Запросы
+                                        <span class="badge badge-primary bg-primary ml-2 hidden"
+                                        data-region="contact-request-count"
+                                        aria-label="Ожидающих запросов на добавление в собеседники: 0">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content d-flex flex-column h-100">
+                                            <div
+                    class="tab-pane fade show active h-100 lazy-load-list"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="7475"
+                                        id="contacts-tab-panel-6222603065adf622260305c1c334"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-6222603065adf622260305c1c334"
+
+                >
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Нет контактов
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                    </div>
+                </div>
+                
+                                            <div
+                    class="tab-pane fade h-100 lazy-load-list"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="7475"
+                                        id="requests-tab-panel-6222603065adf622260305c1c334"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-6222603065adf622260305c1c334"
+
+                >
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Нет запросов на добавление в контакты
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>                
+                <div
+                    class="view-conversation hidden h-100"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-user-id="7475"
+                    data-midnight="1646416800"
+                    data-message-poll-min="10"
+                    data-message-poll-max="120"
+                    data-message-poll-after-max="300"
+                    style="overflow-y: auto; overflow-x: hidden"
+                >
+                    <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                        <div class="content-message-container hidden h-100 px-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                            <div class="py-3 sticky-top z-index-1 border-bottom text-center hidden" data-region="contact-request-sent-message-container">
+                                <p class="m-0">Запрос на добавление в контакты отправлен</p>
+                                <p class="font-italic font-weight-light" data-region="text"></p>
+                            </div>
+                            <div class="p-3 text-center hidden" data-region="self-conversation-message-container">
+                                <p class="m-0">Личное пространство</p>
+                                <p class="font-italic font-weight-light" data-region="text">Сохраните черновики сообщений, ссылок, заметок и т.п. К ним можно будет вернуться позже.</p>
+                           </div>
+                            <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</div>
+                        </div>
+                        <div class="p-4 w-100 h-100 hidden position-absolute z-index-1" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                            
+                            <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                                <p class="text-muted" data-region="dialogue-text"></p>
+                                <div class="mb-2 custom-control custom-checkbox hidden" data-region="delete-messages-for-all-users-toggle-container">
+                                    <input type="checkbox" class="custom-control-input" id="delete-messages-for-all-users" data-region="delete-messages-for-all-users-toggle">
+                                    <label class="custom-control-label text-muted" for="delete-messages-for-all-users">
+                                        Удалить у меня и у всех остальных
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                                    <span data-region="dialogue-button-text">Блок</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                                    <span data-region="dialogue-button-text">Разблокировать</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                                    <span data-region="dialogue-button-text">Удалить</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                                    <span data-region="dialogue-button-text">Добавить</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                                    <span data-region="dialogue-button-text">Удалить</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                                    <span data-region="dialogue-button-text">Удалить</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                                    <span data-region="dialogue-button-text">Отправить запрос на добавление в контакты</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                                    <span data-region="dialogue-button-text">Принять и добавить в контакты</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                                    <span data-region="dialogue-button-text">Отказаться</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block" data-action="okay-confirm">OK</button>
+                                <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">Отмена</button>
+                            </div>
+                        </div>
+                        <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                            <div class="h-100 d-flex flex-column">
+                                <div
+                                    class="px-2 pb-2 pt-0 bg-light h-100"
+                                    style="overflow-y: auto"
+                                >
+                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                </div>
+                            </div>                        </div>
+                    </div>
+                </div>
+                
+                <div
+                    class="hidden"
+                    aria-hidden="true"
+                    data-region="view-group-info"
+                >
+                    <div
+                        class="pt-3 h-100 d-flex flex-column"
+                        data-region="group-info-content-container"
+                        style="overflow-y: auto"
+                    ></div>
+                </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="7475">
+                    <div id="message-drawer-view-overview-container-6222603065adf622260305c1c334" class="d-flex flex-column h-100" style="overflow-y: auto">
+                            
+                            
+                            <div
+                                class="section border-0 card"
+                                data-region="view-overview-favourites"
+                            >
+                                <div id="view-overview-favourites-toggle" class="card-header p-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-favourites-target-6222603065adf622260305c1c334"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-favourites-target-6222603065adf622260305c1c334"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Помеченные</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container"
+                                        aria-label="Всего бесед: ">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                        data-region="section-unread-count"
+                                        >
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="7475"
+                                            id="view-overview-favourites-target-6222603065adf622260305c1c334"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Нет помеченных бесед</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div
+                                class="section border-0 card"
+                                data-region="view-overview-group-messages"
+                            >
+                                <div id="view-overview-group-messages-toggle" class="card-header p-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-group-messages-target-6222603065adf622260305c1c334"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-group-messages-target-6222603065adf622260305c1c334"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Группа</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container"
+                                        aria-label="Всего бесед: ">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                        data-region="section-unread-count"
+                                        >
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="7475"
+                                            id="view-overview-group-messages-target-6222603065adf622260305c1c334"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Нет групповых бесед</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div
+                                class="section border-0 card"
+                                data-region="view-overview-messages"
+                            >
+                                <div id="view-overview-messages-toggle" class="card-header p-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-messages-target-6222603065adf622260305c1c334"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-messages-target-6222603065adf622260305c1c334"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Личное</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container"
+                                        aria-label="Всего бесед: ">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                        data-region="section-unread-count"
+                                        >
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="7475"
+                                            id="view-overview-messages-target-6222603065adf622260305c1c334"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Нет личных бесед</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div
+                    data-region="view-search"
+                    aria-hidden="true"
+                    class="h-100 hidden"
+                    data-user-id="7475"
+                    data-users-offset="0"
+                    data-messages-offset="0"
+                    style="overflow-y: auto"
+                    
+                >
+                    <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                        
+                        <div class="d-flex flex-column">
+                            <div class="mb-3 bg-white" data-region="all-contacts-container">
+                                <div data-region="contacts-container"  class="pt-2">
+                                    <h4 class="h6 px-2">Собеседники</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div data-region="non-contacts-container" class="pt-2 border-top">
+                                    <h4 class="h6 px-2">Собеседники отсутствуют</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-users">
+                                        <span data-region="button-text">Загрузить больше</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-white" data-region="messages-container">
+                                <h4 class="h6 px-2 pt-2">Сообщения</h4>
+                                <div class="list-group" data-region="list"></div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                        <span data-region="button-text">Загрузить больше</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="hidden p-3 text-center" data-region="no-results-container">Нет результатов</p>
+                        </div>                    </div>
+                    <div class="hidden" data-region="loading-placeholder">
+                        <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</div>
+                    </div>
+                    <div class="p-3 text-center" data-region="empty-message-container">
+                        <p>Поиск пользователей и сообщений</p>
+                    </div>
+                </div>                
+                <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+                    <div class="hidden" data-region="content-container">
+                        
+                        <div data-region="settings" class="p-3">
+                            <h3 class="h6 font-weight-bold">Приватность</h3>
+                            <p>Вы можете ограничить круг лиц, которые могут отправлять вам сообщения</p>
+                            <div data-preference="blocknoncontacts" class="mb-3">
+                                <fieldset>
+                                    <legend class="sr-only">Принимать сообщения от:</legend>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-6222603065adf622260305c1c334-1"
+                                                value="1"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6222603065adf622260305c1c334-1">
+                                                Только мои контакты
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-6222603065adf622260305c1c334-0"
+                                                value="0"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6222603065adf622260305c1c334-0">
+                                                Мои контакты и любой в моих курсах
+                                            </label>
+                                        </div>
+                                </fieldset>
+                            </div>
+                        
+                            <div class="hidden" data-region="notification-preference-container">
+                                <h3 class="mb-2 mt-4 h6 font-weight-bold">Настройка уведомлений</h3>
+                            </div>
+                        
+                            <h3 class="mb-2 mt-4 h6 font-weight-bold">Основные</h3>
+                            <div data-preference="entertosend">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-6222603065adf622260305c1c334" >
+                                    <label class="custom-control-label" for="enter-to-send-6222603065adf622260305c1c334">
+                                        Использовать Enter для отправки
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-region="placeholder-container">
+                        
+                        <div class="d-flex flex-column p-3">
+                            <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                            <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-4">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>            </div>
+            <div class="footer-container position-relative" data-region="footer-container">
+                
+                <div
+                    class="hidden border-top bg-white position-relative"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-enter-to-send="0"
+                >
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-container">
+                        
+                            <div
+                                class="emoji-auto-complete-container w-100 hidden"
+                                data-region="emoji-auto-complete-container"
+                                aria-live="polite"
+                                aria-hidden="true"
+                            >
+                            </div>
+                        <div class="d-flex mt-sm-1">
+                            <textarea
+                                dir="auto"
+                                data-region="send-message-txt"
+                                class="form-control bg-light"
+                                rows="3"
+                                data-auto-rows
+                                data-min-rows="3"
+                                data-max-rows="5"
+                                aria-label="Напишите сообщение..."
+                                placeholder="Напишите сообщение..."
+                                style="resize: none"
+                                maxlength="4096"
+                            ></textarea>
+                        
+                            <div class="position-relative d-flex flex-column">
+                                    <div
+                                        data-region="emoji-picker-container"
+                                        class="emoji-picker-container hidden"
+                                        aria-hidden="true"
+                                    >
+                                        
+                                        <div
+                                            data-region="emoji-picker"
+                                            class="card shadow emoji-picker"
+                                        >
+                                            <div class="card-header px-1 pt-1 pb-0 d-flex justify-content-between flex-shrink-0">
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button selected"
+                                                    data-action="show-category"
+                                                    data-category="Recent"
+                                                    title="Последний"
+                                                >
+                                                    <i class="icon fa fa-clock-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Smileys & Emotion"
+                                                    title="Смайлики и эмоции"
+                                                >
+                                                    <i class="icon fa fa-smile-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="People & Body"
+                                                    title="Люди и тело"
+                                                >
+                                                    <i class="icon fa fa-male fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Animals & Nature"
+                                                    title="Животные и природа"
+                                                >
+                                                    <i class="icon fa fa-leaf fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Food & Drink"
+                                                    title="Еда и питьё"
+                                                >
+                                                    <i class="icon fa fa-cutlery fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Travel & Places"
+                                                    title="Путешествия и места"
+                                                >
+                                                    <i class="icon fa fa-plane fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Activities"
+                                                    title="Мероприятия"
+                                                >
+                                                    <i class="icon fa fa-futbol-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Objects"
+                                                    title="Предметы"
+                                                >
+                                                    <i class="icon fa fa-lightbulb-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Symbols"
+                                                    title="Символы"
+                                                >
+                                                    <i class="icon fa fa-heart fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button"
+                                                    data-action="show-category"
+                                                    data-category="Flags"
+                                                    title="Флаги"
+                                                >
+                                                    <i class="icon fa fa-flag fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                            </div>
+                                            <div class="card-body p-2 d-flex flex-column overflow-hidden">
+                                                <div class="input-group mb-1 flex-shrink-0">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text pr-0 bg-white text-muted">
+                                                            <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                                        </span>
+                                                    </div>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control border-left-0"
+                                                        placeholder="Найти"
+                                                        aria-label="Найти"
+                                                        data-region="search-input"
+                                                    >
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto emojis-container h-100" data-region="emojis-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto search-results-container h-100 hidden" data-region="search-results-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex flex-shrink-0"
+                                                data-region="footer"
+                                            >
+                                                <div class="emoji-preview" data-region="emoji-preview"></div>
+                                                <div data-region="emoji-short-name" class="emoji-short-name text-muted text-wrap ml-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-link btn-icon icon-size-3 ml-1"
+                                        aria-label="Переключить выбор эмодзи"
+                                        data-action="toggle-emoji-picker"
+                                    >
+                                        <i class="icon fa fa-smile-o fa-fw " aria-hidden="true"  ></i>
+                                    </button>
+                                <button
+                                    class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto"
+                                    aria-label="Отправить сообщение"
+                                    data-action="send-message"
+                                >
+                                    <span data-region="send-icon-container"><i class="icon fa fa-paper-plane fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-edit-mode-container">
+                        
+                        <div class="d-flex p-3 justify-content-end">
+                            <button
+                                class="btn btn-link btn-icon my-1 icon-size-4"
+                                data-action="delete-selected-messages"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Удалить выбранные сообщения"
+                            >
+                                <span data-region="icon-container"><i class="icon fa fa-trash fa-fw " aria-hidden="true"  ></i></span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                                <span class="sr-only">Удалить выбранные сообщения</span>
+                            </button>
+                        </div>                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-contact-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p data-region="title"></p>
+                            <p class="text-muted" data-region="text"></p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                                <span data-region="dialogue-button-text">Отправить запрос на добавление в контакты</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-unblock-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Вы заблокировали этого пользователя</p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                                <span data-region="dialogue-button-text">Разблокировать пользователя</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Загрузка" aria-label="Загрузка"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-unable-to-message">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Вы не можете отправить сообщение этому пользователю</p>
+                        </div>
+                    </div>
+                    <div class="p-sm-2" data-region="placeholder-container">
+                        <div class="d-flex">
+                            <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                            <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                        </div>                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                    <div data-region="view-overview" class="text-center">
+                        <a href="https://do.omgau.ru/message/index.php">
+                            Смотреть все
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+</div>
+    <div id="goto-top-link">
+        <a class="btn btn-light" role="button" href="#" aria-label="Наверх">
+            <i class="icon fa fa-arrow-up fa-fw " aria-hidden="true"  ></i>
+        </a>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+    
+    
+            <div class="logininfo">Вы зашли под именем <a href="https://do.omgau.ru/user/profile.php?id=7475" title="Просмотр профиля">Данил Андреевич Демин</a> (<a href="https://do.omgau.ru/login/logout.php?sesskey=WbDlg5PPQl">Выход</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://do.omgau.ru/">В начало</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Настраиваемое меню">
+                    <ul class="list-unstyled pt-3">
+                                        <li><a href="#" title="Язык">Русский ‎(ru)‎</a></li>
+                                    <li>
+                                        <ul class="list-unstyled ml-3">
+                                                            <li><a href="https://do.omgau.ru/my/index.php?lang=ru" title="Русский ‎(ru)‎">Русский ‎(ru)‎</a></li>
+                                                            <li><a href="https://do.omgau.ru/my/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                        </ul>
+                                    </li>
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://do.omgau.ru/admin/tool/dataprivacy/summary.php">Сводка хранения данных</a></div>
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://do.omgau.ru/lib/requirejs.php/1636432648/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://do.omgau.ru/lib/javascript.php/1636432648/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://do.omgau.ru/lib/javascript.php/1636432648/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://do.omgau.ru/lib/javascript.php/1636432648/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://do.omgau.ru/lib/javascript.php/1636432648/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('ru');
+});;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=28885&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=119469&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=133063&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_4(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=134173&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_5(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=201883&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', legacy_activity_onclick_handler_1, '#random622260305c1c37_label_3_11', null);
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', legacy_activity_onclick_handler_2, '#random622260305c1c37_label_3_12', null);
+    });
+;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("4"); M.util.js_complete('block_navigation/navblock');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("5", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('block_online_users/change_user_visibility'); require(['block_online_users/change_user_visibility'], function(amd) {amd.init(); M.util.js_complete('block_online_users/change_user_visibility');});;
+
+require(
+[
+    'jquery',
+    'block_myoverview/main',
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-myoverview-6222603062ac2622260305c1c318');
+    Main.init(root);
+});
+;
+
+require(
+[
+    'jquery',
+    'block_recentlyaccessedcourses/main'
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-recentlyaccessedcourses-62226030630a7622260305c1c319');
+    var userid = root.attr('data-userid');
+
+    Main.init(userid, root);
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select622260305c1c322', [CustomEvents.events.accessibleChange]);
+    $('#single_select622260305c1c322').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f622260305c1c321').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-62226030647a4622260305c1c325');
+    Popover.init(toggle);
+});
+;
+
+require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
+    var root = $('#message-drawer-6222603065adf622260305c1c334');
+    MessageDrawer.init(root, '6222603065adf622260305c1c334', false);
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select622260305c1c336', [CustomEvents.events.accessibleChange]);
+    $('#single_select622260305c1c336').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f622260305c1c335').submit();
+        }
+    });
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(97858, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u0435","name":"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435","error":"\u041e\u0448\u0438\u0431\u043a\u0430","info":"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f","yes":"\u0414\u0430","no":"\u041d\u0435\u0442","ok":"OK","viewallcourses":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0435 \u043a\u0443\u0440\u0441\u044b","cancel":"\u041e\u0442\u043c\u0435\u043d\u0430","changesmadereallygoaway":"\u0412\u044b \u0432\u043d\u0435\u0441\u043b\u0438 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f. \u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b, \u0447\u0442\u043e \u0445\u043e\u0442\u0438\u0442\u0435 \u0443\u0439\u0442\u0438 \u0438 \u043f\u043e\u0442\u0435\u0440\u044f\u0442\u044c \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f?","confirm":"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c","areyousure":"\u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b?","closebuttontitle":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","unknownerror":"\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u0430\u044f \u043e\u0448\u0438\u0431\u043a\u0430","file":"\u0424\u0430\u0439\u043b","url":"URL","collapseall":"\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0432\u0441\u0451","expandall":"\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0432\u0441\u0451"},"repository":{"type":"\u0422\u0438\u043f","size":"\u0420\u0430\u0437\u043c\u0435\u0440","invalidjson":"\u041d\u0435\u0432\u0435\u0440\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u043a\u0430 JSON","nofilesattached":"\u041d\u0435 \u043f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u0435\u043d \u043d\u0438 \u043e\u0434\u0438\u043d \u0444\u0430\u0439\u043b","filepicker":"\u0412\u044b\u0431\u043e\u0440 \u0444\u0430\u0439\u043b\u0430","logout":"\u0412\u044b\u0445\u043e\u0434","nofilesavailable":"\u041d\u0435\u0442 \u043d\u0438 \u043e\u0434\u043d\u043e\u0433\u043e \u0444\u0430\u0439\u043b\u0430","norepositoriesavailable":"\u041a \u0441\u043e\u0436\u0430\u043b\u0435\u043d\u0438\u044e, \u043d\u0438 \u043e\u0434\u043d\u043e \u0438\u0437 \u0412\u0430\u0448\u0438\u0445 \u0442\u0435\u043a\u0443\u0449\u0438\u0445 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449 \u0444\u0430\u0439\u043b\u043e\u0432 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0444\u0430\u0439\u043b\u044b \u0432 \u0437\u0430\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u043c\u043e\u043c \u0444\u043e\u0440\u043c\u0430\u0442\u0435.","fileexistsdialogheader":"\u0424\u0430\u0439\u043b \u0441\u043e\u0437\u0434\u0430\u043d","fileexistsdialog_editor":"\u0424\u0430\u0439\u043b \u0441 \u044d\u0442\u0438\u043c \u0438\u043c\u0435\u043d\u0435\u043c \u0443\u0436\u0435 \u0431\u044b\u043b \u043f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u0435\u043d \u043a \u0440\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0443\u0435\u043c\u043e\u043c\u0443 \u0442\u0435\u043a\u0441\u0442\u0443","fileexistsdialog_filemanager":"\u0424\u0430\u0439\u043b \u0441 \u044d\u0442\u0438\u043c \u0438\u043c\u0435\u043d\u0435\u043c \u0443\u0436\u0435 \u0431\u044b\u043b \u043f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u0435\u043d","renameto":"\u041f\u0435\u0440\u0435\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u0442\u044c \u0432 \u00ab{$a}\u00bb","referencesexist":"\u041d\u0430 \u044d\u0442\u043e\u0442 \u0444\u0430\u0439\u043b \u0435\u0441\u0442\u044c \u0441\u0441\u044b\u043b\u043a\u0438: {$a}","select":"\u0412\u044b\u0431\u0440\u0430\u0442\u044c"},"admin":{"confirmdeletecomments":"\u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b \u0432 \u0442\u043e\u043c, \u0447\u0442\u043e \u0441\u043e\u0431\u0438\u0440\u0430\u0435\u0442\u0435\u0441\u044c \u0443\u0434\u0430\u043b\u0438\u0442\u044c \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438?","confirmation":"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435"},"debug":{"debuginfo":"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e\u0431 \u043e\u0442\u043b\u0430\u0434\u043a\u0435","line":"\u0421\u0442\u0440\u043e\u043a\u0430","stacktrace":"\u0422\u0440\u0430\u0441\u0441\u0438\u0440\u043e\u0432\u043a\u0438 \u0441\u0442\u0435\u043a\u0430"},"langconfig":{"labelsep":":"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"ru"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random622260305c1c337'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random622260305c1c337'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
