@@ -20,15 +20,18 @@ auth = {
     'password': Password
 }
 
-s.post(url+'/login/index.php', data=auth, timeout=(5)) #auth
+ss = s.post(url+'/login/index.php', data=auth, timeout=(5)) #auth
 r=s.get(url+'/my')  #page
 
 # soup = BeautifulSoup(r.text, "lxml")
 # raspisanie = soup.find(text="Расписание занятий").parent.get("href")
 # print(raspisanie)
 
-with open(path + "LogedSite.html", "w", encoding="utf-8") as file:
-    file.write(r.text)
+print(ss.status_code)
+print(r.status_code)
+
+# with open(path + "LogedSite.html", "w", encoding="utf-8") as file:
+#     file.write(r.text)
 
 
 # if 'ОБЩАЯ' in r.text:

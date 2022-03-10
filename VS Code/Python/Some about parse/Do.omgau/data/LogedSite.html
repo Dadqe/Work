@@ -11,7 +11,7 @@
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/do.omgau.ru","sesskey":"WbDlg5PPQl","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1636432648","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1636432648","admin":"admin","svgicons":true,"usertimezone":"\u0410\u0437\u0438\u044f\/\u041e\u043c\u0441\u043a","contextid":97858,"langrev":1646345402,"templaterev":"1636432648"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/do.omgau.ru","sesskey":"ZgxfJZCB9m","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1636432648","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1636432648","admin":"admin","svgicons":true,"usertimezone":"\u0410\u0437\u0438\u044f\/\u041e\u043c\u0441\u043a","contextid":97858,"langrev":1646604603,"templaterev":"1636432648"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/do.omgau.ru\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/do.omgau.ru\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?m\/1636432648\/","combine":true,"comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","ext":false,"root":"m\/1636432648\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_znaniumcombook-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/do.omgau.ru\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/do.omgau.ru\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1636432648\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/do.omgau.ru\/lib\/javascript.php\/1636432648\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/do.omgau.ru\/lib\/javascript.php\/1636432648\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -50,10 +50,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-62226030639cd622260305c1c323" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Язык" aria-controls="drop-down-menu-62226030639cd622260305c1c323">
+    <a class="dropdown-toggle nav-link" id="drop-down-62286fff5c26e62286fff5384323" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Язык" aria-controls="drop-down-menu-62286fff5c26e62286fff5384323">
         Русский ‎(ru)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-62226030639cd622260305c1c323" aria-labelledby="drop-down-62226030639cd622260305c1c323">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-62286fff5c26e62286fff5384323" aria-labelledby="drop-down-62286fff5c26e62286fff5384323">
                 <a class="dropdown-item" role="menuitem" href="https://do.omgau.ru/my/index.php?lang=ru" title="Русский ‎(ru)‎">Русский ‎(ru)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://do.omgau.ru/my/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
     </div>
@@ -73,7 +73,7 @@ document.body.className += ' jsenabled';
     <div class="popover-region-toggle nav-link icon-no-margin"
         data-region="popover-region-toggle"
         role="button"
-        aria-controls="popover-region-container-62226030640bb622260305c1c324"
+        aria-controls="popover-region-container-62286fff5c99e62286fff5384324"
         aria-haspopup="true"
         aria-label="Показать окно без новых уведомлений"
         tabindex="0">
@@ -83,7 +83,7 @@ document.body.className += ' jsenabled';
 
     </div>
     <div 
-        id="popover-region-container-62226030640bb622260305c1c324"
+        id="popover-region-container-62286fff5c99e62286fff5384324"
         class="popover-region-container"
         data-region="popover-region-container"
         aria-expanded="false"
@@ -129,7 +129,7 @@ document.body.className += ' jsenabled';
                 </a>
     </div>
 </div><div class="popover-region collapsed" data-region="popover-region-messages">
-    <a id="message-drawer-toggle-62226030647a4622260305c1c325" class="nav-link d-inline-block popover-region-toggle position-relative icon-no-margin" href="#"
+    <a id="message-drawer-toggle-62286fff5d0bc62286fff5384325" class="nav-link d-inline-block popover-region-toggle position-relative icon-no-margin" href="#"
             role="button">
         <i class="icon fa fa-comment fa-fw "  title="Переключить меню сообщений" aria-label="Переключить меню сообщений"></i>
         <div class="count-container hidden" data-region="count-container"
@@ -177,7 +177,7 @@ document.body.className += ' jsenabled';
                                 <span class="menu-action-text" id="actionmenuaction-5">Настройки</span>
                         </a>
                     <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
-                                                                <a href="https://do.omgau.ru/login/logout.php?sesskey=WbDlg5PPQl" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                                <a href="https://do.omgau.ru/login/logout.php?sesskey=ZgxfJZCB9m" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
                                 <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
                                 <span class="menu-action-text" id="actionmenuaction-6">Выход</span>
                         </a>
@@ -211,9 +211,9 @@ document.body.className += ' jsenabled';
                         <div class="singlebutton">
     <form method="post" action="https://do.omgau.ru/my/index.php" >
             <input type="hidden" name="edit" value="1">
-            <input type="hidden" name="sesskey" value="WbDlg5PPQl">
+            <input type="hidden" name="sesskey" value="ZgxfJZCB9m">
         <button type="submit" class="btn btn-secondary"
-            id="single_button622260305c1c31"
+            id="single_button62286fff538431"
             title=""
             
             >Настроить эту страницу</button>
@@ -355,7 +355,7 @@ document.body.className += ' jsenabled';
 
 
         <div class="card-text content mt-3">
-            <div id="block-myoverview-6222603062ac2622260305c1c318" class="block-myoverview block-cards" data-region="myoverview" role="navigation">
+            <div id="block-myoverview-62286fff5b2d562286fff5384318" class="block-myoverview block-cards" data-region="myoverview" role="navigation">
 
             <div data-region="filter" class="d-flex align-items-center flex-wrap" aria-label="Элементы управления обзором курса">
                 <div class="dropdown mb-1 mr-auto">
@@ -377,7 +377,7 @@ document.body.className += ' jsenabled';
                             <span class="filler">&nbsp;</span>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="Все курсы, кроме скрытых" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="Все курсы, кроме скрытых" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" aria-current="true">
                                 Все (кроме скрытых)
                             </a>
                         </li>
@@ -385,17 +385,17 @@ document.body.className += ' jsenabled';
                             <span class="filler">&nbsp;</span>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Показать текущие курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Показать текущие курсы" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                 Текущие
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Показать будущие курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Показать будущие курсы" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                 Предстоящие
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Показать прошлые курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Показать прошлые курсы" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                 Прошедшие
                             </a>
                         </li>
@@ -403,14 +403,14 @@ document.body.className += ' jsenabled';
                             <span class="filler">&nbsp;</span>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="favourites"  data-pref="favourites" aria-label="Показать избранные курсы" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="favourites"  data-pref="favourites" aria-label="Показать избранные курсы" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                 Избранное
                             </a>
                         <li class="dropdown-divider" role="presentation">
                             <span class="filler">&nbsp;</span>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="hidden"  data-pref="hidden" aria-label="Показать курсы, скрытые от просмотра" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                            <a class="dropdown-item" href="#" data-filter="grouping" data-value="hidden"  data-pref="hidden" aria-label="Показать курсы, скрытые от просмотра" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                 Скрытые
                             </a>
                         </li>
@@ -430,12 +430,12 @@ document.body.className += ' jsenabled';
                         </button>
                         <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="sortingdropdown">
                             <li>
-                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-label="Сортировать курсы по их названию" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-label="Сортировать курсы по их названию" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" aria-current="true">
                                     Название курса
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-label="Сортировать курсы по дате последнего посещения" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                <a class="dropdown-item" href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-label="Сортировать курсы по дате последнего посещения" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                     Последнее посещение
                                 </a>
                             </li>
@@ -454,17 +454,17 @@ document.body.className += ' jsenabled';
                         </button>
                         <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="displaydropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="card" data-pref="card" aria-label="Перейти к просмотру карт" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" aria-current="true">
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="card" data-pref="card" aria-label="Перейти к просмотру карт" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" aria-current="true">
                                         Карточка
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="list" data-pref="list" aria-label="Перейти к просмотру списка" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="list" data-pref="list" aria-label="Перейти к просмотру списка" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                         Список
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="summary" data-pref="summary" aria-label="Перейти к просмотру сводок" aria-controls="courses-view-6222603062ac2622260305c1c318" role="menuitem" >
+                                    <a class="dropdown-item" href="#" data-display-option="display" data-value="summary" data-pref="summary" aria-label="Перейти к просмотру сводок" aria-controls="courses-view-62286fff5b2d562286fff5384318" role="menuitem" >
                                         Описание
                                     </a>
                                 </li>
@@ -473,7 +473,7 @@ document.body.className += ' jsenabled';
             </div>
 
     <div class="container-fluid p-0">
-        <div id="courses-view-6222603062ac2622260305c1c318"
+        <div id="courses-view-62286fff5b2d562286fff5384318"
             data-region="courses-view"
             data-display="card"
             data-grouping="all"
@@ -515,10 +515,10 @@ document.body.className += ' jsenabled';
 
 
         <div class="card-text content mt-3">
-            <div id="block-recentlyaccessedcourses-62226030630a7622260305c1c319" class="block-recentlyaccessedcourses block-cards" data-region="recentlyaccessedcourses"
+            <div id="block-recentlyaccessedcourses-62286fff5b8ea62286fff5384319" class="block-recentlyaccessedcourses block-cards" data-region="recentlyaccessedcourses"
         data-userid="7475" data-displaycoursecategory="1">
     <div class="container-fluid p-0">
-        <div id="recentlyaccessedcourses-view-62226030630a7622260305c1c319" data-region="recentlyaccessedcourses-view">
+        <div id="recentlyaccessedcourses-view-62286fff5b8ea62286fff5384319" data-region="recentlyaccessedcourses-view">
             <div data-region="loading-placeholder">
                 <div class="card-deck dashboard-card-deck one-row overflow-hidden" style="height: 13.05rem">
                     <div class="card dashboard-card border-0">
@@ -559,7 +559,7 @@ document.body.className += ' jsenabled';
                         >
                         
                             <nav
-                                id="paging-bar-62226030630a7622260305c1c319"
+                                id="paging-bar-62286fff5b8ea62286fff5384319"
                                 class=""
                                 data-region="paging-bar"
                                 data-ignore-control-while-loading=""
@@ -667,7 +667,7 @@ document.body.className += ' jsenabled';
 
 
         <div class="card-text content mt-3">
-            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random622260305c1c33_group" data-collapsible="false" aria-labelledby="random622260305c1c32_label_1_1"><p class="tree_item branch canexpand navigation_node"><a tabindex="-1" id="random622260305c1c32_label_1_1" href="https://do.omgau.ru/my/">Личный кабинет</a></p><ul id="random622260305c1c33_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c34_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c34_label_2_2" href="https://do.omgau.ru/?redirect=0"><i class="icon fa fa-home fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Домашняя страница</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random622260305c1c36_group" aria-labelledby="random622260305c1c34_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random622260305c1c34_label_2_3" title="Электронная информационно-образовательная среда ФГБОУ ВО Омский ГАУ (ОмГАУ_Moodle)">Страницы сайта</span></p><ul id="random622260305c1c36_group" role="group" aria-hidden="true"><li class="type_unknown depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_5" href="https://do.omgau.ru/blog/index.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Блоги сайта</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_6" href="https://do.omgau.ru/badges/view.php?type=1"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Значки сайта</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_7"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_7" href="https://do.omgau.ru/tag/search.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Теги</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_8"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_8" href="https://do.omgau.ru/calendar/view.php?view=month"><i class="icon fa fa-calendar fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Календарь</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_10"><p class="tree_item hasicon"><a tabindex="-1" id="random622260305c1c37_label_3_10" title="Форум" href="https://do.omgau.ru/mod/forum/view.php?id=382"><img class="icon navicon" alt="Форум" title="Форум" src="https://do.omgau.ru/theme/image.php/classic/forum/1636432648/icon" /><span class="item-content-wrap">Новости сайта</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_11"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=28885" id="random622260305c1c37_label_3_11" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">Корпоративная почта (omgau.org)</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random622260305c1c37_label_3_12"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=119469" id="random622260305c1c37_label_3_12" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">СОВРЕМЕННЫЕ ПРОФЕССИОНАЛЬНЫЕ БАЗЫ ДАННЫХ</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random622260305c1c315_group" aria-labelledby="random622260305c1c34_label_2_17"><p class="tree_item branch"><span tabindex="-1" id="random622260305c1c34_label_2_17">Мои курсы</span></p><ul id="random622260305c1c315_group" role="group"><li class="type_custom depth_3 item_with_icon current_branch" role="treeitem" aria-labelledby="random622260305c1c316_label_3_18"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random622260305c1c316_label_3_18" href="https://do.omgau.ru/my/"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Больше...</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0" aria-labelledby="random622260305c1c34_label_2_19"><p class="tree_item branch" id="expandable_branch_0_courses"><a tabindex="-1" id="random622260305c1c34_label_2_19" href="https://do.omgau.ru/course/index.php">Курсы</a></p></li></ul></li></ul>
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random62286fff538433_group" data-collapsible="false" aria-labelledby="random62286fff538432_label_1_1"><p class="tree_item branch canexpand navigation_node"><a tabindex="-1" id="random62286fff538432_label_1_1" href="https://do.omgau.ru/my/">Личный кабинет</a></p><ul id="random62286fff538433_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random62286fff538434_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538434_label_2_2" href="https://do.omgau.ru/?redirect=0"><i class="icon fa fa-home fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Домашняя страница</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random62286fff538436_group" aria-labelledby="random62286fff538434_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random62286fff538434_label_2_3" title="Электронная информационно-образовательная среда ФГБОУ ВО Омский ГАУ (ОмГАУ_Moodle)">Страницы сайта</span></p><ul id="random62286fff538436_group" role="group" aria-hidden="true"><li class="type_unknown depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538437_label_3_5" href="https://do.omgau.ru/blog/index.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Блоги сайта</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538437_label_3_6" href="https://do.omgau.ru/badges/view.php?type=1"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Значки сайта</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_7"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538437_label_3_7" href="https://do.omgau.ru/tag/search.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Теги</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_8"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538437_label_3_8" href="https://do.omgau.ru/calendar/view.php?view=month"><i class="icon fa fa-calendar fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Календарь</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_10"><p class="tree_item hasicon"><a tabindex="-1" id="random62286fff538437_label_3_10" title="Форум" href="https://do.omgau.ru/mod/forum/view.php?id=382"><img class="icon navicon" alt="Форум" title="Форум" src="https://do.omgau.ru/theme/image.php/classic/forum/1636432648/icon" /><span class="item-content-wrap">Новости сайта</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_11"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=28885" id="random62286fff538437_label_3_11" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">Корпоративная почта (omgau.org)</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random62286fff538437_label_3_12"><p class="tree_item hasicon"><a href="https://do.omgau.ru/mod/url/view.php?id=119469" id="random62286fff538437_label_3_12" class=""  tabindex="-1"  title="Гиперссылка" ><img class="icon navicon" alt="Гиперссылка" title="Гиперссылка" src="https://do.omgau.ru/theme/image.php/classic/url/1636432648/icon" /><span class="item-content-wrap">СОВРЕМЕННЫЕ ПРОФЕССИОНАЛЬНЫЕ БАЗЫ ДАННЫХ</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random62286fff5384315_group" aria-labelledby="random62286fff538434_label_2_17"><p class="tree_item branch"><span tabindex="-1" id="random62286fff538434_label_2_17">Мои курсы</span></p><ul id="random62286fff5384315_group" role="group"><li class="type_custom depth_3 item_with_icon current_branch" role="treeitem" aria-labelledby="random62286fff5384316_label_3_18"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random62286fff5384316_label_3_18" href="https://do.omgau.ru/my/"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Больше...</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0" aria-labelledby="random62286fff538434_label_2_19"><p class="tree_item branch" id="expandable_branch_0_courses"><a tabindex="-1" id="random62286fff538434_label_2_19" href="https://do.omgau.ru/course/index.php">Курсы</a></p></li></ul></li></ul>
             <div class="footer"></div>
             
         </div>
@@ -888,18 +888,57 @@ document.body.className += ' jsenabled';
 
 
         <div class="card-text content mt-3">
-            <div class="info">Пользователей на сайте: 11 (последние 5 минут)</div><ul class='list'>
+            <div class="info">Пользователей на сайте: 69 (последние 5 минут)</div><ul class='list'>
 <li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7475&amp;course=1" title="сейчас"><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Данил Андреевич Демин</a></div><div class="uservisibility"><a title="Скрыть моё присутствие на сайте от других пользователей" data-action="hide" data-userid="7475" id="change-user-visibility" href=""><i class="icon fa fa-eye fa-fw "  title="Скрыть моё присутствие на сайте от других пользователей" aria-label="Скрыть моё присутствие на сайте от других пользователей"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25086&amp;course=1" title="11 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Дмитрий Владимирович Руль</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25086"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24073&amp;course=1" title="1 мин. 48 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Максим Евгеньевич Кузнецов</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24073"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=18871&amp;course=1" title="2 мин. 8 сек."><img src="https://do.omgau.ru/pluginfile.php/229669/user/icon/classic/f2?rev=345907" class="userpicture" width="16" height="16" alt="" />Кирилл Алексеевич Тетерев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=18871"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24121&amp;course=1" title="2 мин. 19 сек."><img src="https://do.omgau.ru/pluginfile.php/507044/user/icon/classic/f2?rev=684339" class="userpicture" width="16" height="16" alt="" />Екатерина Николаевна Стойчева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24121"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=85&amp;course=1" title="2 мин. 39 сек."><img src="https://do.omgau.ru/pluginfile.php/1746/user/icon/classic/f2?rev=179021" class="userpicture" width="16" height="16" alt="" />Ольга Николаевна Долматова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=85"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19533&amp;course=1" title="3 мин. 29 сек."><img src="https://do.omgau.ru/pluginfile.php/248053/user/icon/classic/f2?rev=399661" class="userpicture" width="16" height="16" alt="" />Юлия Алексеевна Елохова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19533"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25626&amp;course=1" title="3 мин. 37 сек."><img src="https://do.omgau.ru/pluginfile.php/509384/user/icon/classic/f2?rev=772270" class="userpicture" width="16" height="16" alt="" />Гульжан Шайдуловна Мутинова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25626"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=1927&amp;course=1" title="4 мин."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Жанбота Бауржановна Есмурзаева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=1927"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7797&amp;course=1" title="4 мин. 28 сек."><img src="https://do.omgau.ru/pluginfile.php/98218/user/icon/classic/f2?rev=248990" class="userpicture" width="16" height="16" alt="" />Зоя Сергеевна Никонова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=7797"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
-<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19135&amp;course=1" title="5 мин. 9 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Алёна Валерьевна Шукайло</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19135"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=21641&amp;course=1" title="8 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Максим Сергеевич Щучка</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=21641"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=21083&amp;course=1" title="8 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Данила Анатольевич Полежаев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=21083"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20051&amp;course=1" title="8 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Ростислав Валерьевич Беловолов</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20051"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19537&amp;course=1" title="8 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Александр Владимирович Чичулин</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19537"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=10271&amp;course=1" title="10 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Сергей Юрьевич Болдырь</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=10271"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20000&amp;course=1" title="12 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Нурлан Миделханович Аубакиров</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20000"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=19999&amp;course=1" title="12 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Сергей Александрович Атяньчев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=19999"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20569&amp;course=1" title="13 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Матвей Николаевич Кисненко</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20569"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24778&amp;course=1" title="17 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Кристина Сергеевна Дирксен</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24778"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=22204&amp;course=1" title="18 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Ирина Владимировна Василевич</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=22204"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20148&amp;course=1" title="20 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Денис Алексеевич Ваземиллер</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20148"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25528&amp;course=1" title="22 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Анастасия Андреевна Вехова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25528"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=1993&amp;course=1" title="24 сек."><img src="https://do.omgau.ru/pluginfile.php/17756/user/icon/classic/f2?rev=684078" class="userpicture" width="16" height="16" alt="" />Екатерина Юрьевна Комиссарова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=1993"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=21265&amp;course=1" title="28 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Илья Валерьевич Сизиков</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=21265"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=2465&amp;course=1" title="33 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Наталья Сергеевна Ковальчук</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=2465"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=15986&amp;course=1" title="34 сек."><img src="https://do.omgau.ru/pluginfile.php/219642/user/icon/classic/f2?rev=336563" class="userpicture" width="16" height="16" alt="" />Илья Александрович Рассоха</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=15986"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=21483&amp;course=1" title="38 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Сайлык Хойтпак-ооловна Хертек</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=21483"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=4239&amp;course=1" title="42 сек."><img src="https://do.omgau.ru/pluginfile.php/39486/user/icon/classic/f2?rev=111928" class="userpicture" width="16" height="16" alt="" />Виталий Юрьевич Епанчинцев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=4239"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24038&amp;course=1" title="43 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Юлия Евгеньевна Гнедина</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24038"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=1762&amp;course=1" title="45 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Марина Николаевна Зырянова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=1762"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20375&amp;course=1" title="47 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Иван Евгеньевич Евграфов</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20375"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25557&amp;course=1" title="54 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Руслан Кримхажидович Эльмурзаев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25557"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25547&amp;course=1" title="55 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Владислав Александрович Отт</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25547"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=14096&amp;course=1" title="57 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Максим Сергеевич Бульчук</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=14096"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25554&amp;course=1" title="1 мин."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Полина Александровна Тюрина</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25554"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=13428&amp;course=1" title="1 мин."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Марк Евгеньевич Палей</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=13428"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25531&amp;course=1" title="1 мин. 5 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Рашид Болатканович Досаев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25531"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=8621&amp;course=1" title="1 мин. 5 сек."><img src="https://do.omgau.ru/pluginfile.php/105007/user/icon/classic/f2?rev=248508" class="userpicture" width="16" height="16" alt="" />Анастасия Александровна Доценко</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=8621"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7035&amp;course=1" title="1 мин. 9 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Зибагуль Ермуратовна Какежанова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=7035"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25525&amp;course=1" title="1 мин. 11 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Виктория Игоревна Богданова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25525"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20216&amp;course=1" title="1 мин. 11 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Данила Вячеславович Галайдин</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20216"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25552&amp;course=1" title="1 мин. 12 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Артур Самсонович Стрельников</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25552"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25524&amp;course=1" title="1 мин. 16 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Бекбулат Мухтарович Асаев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25524"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=21645&amp;course=1" title="1 мин. 21 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Наталья Сергеевна Эрбес</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=21645"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7183&amp;course=1" title="1 мин. 29 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Алина Александровна Кутузова (Платонова)</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=7183"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=17663&amp;course=1" title="1 мин. 33 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Татьяна Ивановна Макурова (Головнева)</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=17663"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=23706&amp;course=1" title="1 мин. 34 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Марина Юрьевна Куколева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=23706"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=17872&amp;course=1" title="1 мин. 40 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Елена Александровна Зайцева</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=17872"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25553&amp;course=1" title="1 мин. 45 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Вероника Валерьевна Тебелиус</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25553"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=25532&amp;course=1" title="1 мин. 45 сек."><img src="https://do.omgau.ru/pluginfile.php/509284/user/icon/classic/f2?rev=704514" class="userpicture" width="16" height="16" alt="" />Владимир Андреевич Звягинцев</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=25532"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20647&amp;course=1" title="1 мин. 52 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Максим Витальевич Косоруков</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20647"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=17681&amp;course=1" title="1 мин. 53 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Татьяна Юрьевна Горбунова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=17681"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24048&amp;course=1" title="1 мин. 55 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Татьяна Валентиновна Живогляд</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24048"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24764&amp;course=1" title="2 мин. 14 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Артём Эдуардович Фоминых</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24764"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20738&amp;course=1" title="2 мин. 15 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Никита Сергеевич Ларькин</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20738"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=20893&amp;course=1" title="2 мин. 37 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Евгений Евгеньевич Михальченко</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=20893"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=13227&amp;course=1" title="2 мин. 56 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Сергей Константинович Ноак</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=13227"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=24015&amp;course=1" title="2 мин. 57 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Юлия Александровна Андрющенко</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=24015"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="https://do.omgau.ru/user/view.php?id=7926&amp;course=1" title="3 мин. 17 сек."><img src="https://do.omgau.ru/theme/image.php/classic/core/1636432648/u/f2" class="userpicture defaultuserpic" width="16" height="16" alt="" />Оксана Михайловна Есионова</a></div><div class="message"><a title="Отправить сообщение" href="https://do.omgau.ru/message/index.php?id=7926"><i class="icon fa fa-comment fa-fw "  title="Отправить сообщение" aria-label="Отправить сообщение"></i></a></div></li>
 </ul><div class="clearer"><!-- --></div>
             <div class="footer"></div>
             
@@ -915,7 +954,7 @@ document.body.className += ' jsenabled';
         </div>
     </div>
     <div
-    id="drawer-6222603065adf622260305c1c334"
+    id="drawer-62286fff5e4a162286fff5384334"
     class=" drawer bg-white hidden"
     aria-expanded="false"
     aria-hidden="true"
@@ -923,7 +962,7 @@ document.body.className += ' jsenabled';
     role="region"
     tabindex="0"
 >
-            <div id="message-drawer-6222603065adf622260305c1c334" class="message-app" data-region="message-drawer" role="region">
+            <div id="message-drawer-62286fff5e4a162286fff5384334" class="message-app" data-region="message-drawer" role="region">
             <div class="closewidget text-right pr-2">
                 <a class="text-dark btn-link" data-action="closedrawer" href="#"
                    title="Закрыть" aria-label="Закрыть"
@@ -1112,13 +1151,13 @@ document.body.className += ' jsenabled';
                             <ul class="nav nav-pills nav-fill" role="tablist">
                                 <li class="nav-item">
                                     <a
-                                        id="contacts-tab-6222603065adf622260305c1c334"
+                                        id="contacts-tab-62286fff5e4a162286fff5384334"
                                         class="nav-link active"
-                                        href="#contacts-tab-panel-6222603065adf622260305c1c334"
+                                        href="#contacts-tab-panel-62286fff5e4a162286fff5384334"
                                         data-toggle="tab"
                                         data-action="show-contacts-section"
                                         role="tab"
-                                        aria-controls="contacts-tab-panel-6222603065adf622260305c1c334"
+                                        aria-controls="contacts-tab-panel-62286fff5e4a162286fff5384334"
                                         aria-selected="true"
                                     >
                                         Собеседники
@@ -1126,13 +1165,13 @@ document.body.className += ' jsenabled';
                                 </li>
                                 <li class="nav-item">
                                     <a
-                                        id="requests-tab-6222603065adf622260305c1c334"
+                                        id="requests-tab-62286fff5e4a162286fff5384334"
                                         class="nav-link"
-                                        href="#requests-tab-panel-6222603065adf622260305c1c334"
+                                        href="#requests-tab-panel-62286fff5e4a162286fff5384334"
                                         data-toggle="tab"
                                         data-action="show-requests-section"
                                         role="tab"
-                                        aria-controls="requests-tab-panel-6222603065adf622260305c1c334"
+                                        aria-controls="requests-tab-panel-62286fff5e4a162286fff5384334"
                                         aria-selected="false"
                                     >
                                         Запросы
@@ -1151,10 +1190,10 @@ document.body.className += ' jsenabled';
                     aria-live="polite"
                     data-region="lazy-load-list"
                     data-user-id="7475"
-                                        id="contacts-tab-panel-6222603065adf622260305c1c334"
+                                        id="contacts-tab-panel-62286fff5e4a162286fff5384334"
                     data-section="contacts"
                     role="tabpanel"
-                    aria-labelledby="contacts-tab-6222603065adf622260305c1c334"
+                    aria-labelledby="contacts-tab-62286fff5e4a162286fff5384334"
 
                 >
                     
@@ -1177,10 +1216,10 @@ document.body.className += ' jsenabled';
                     aria-live="polite"
                     data-region="lazy-load-list"
                     data-user-id="7475"
-                                        id="requests-tab-panel-6222603065adf622260305c1c334"
+                                        id="requests-tab-panel-62286fff5e4a162286fff5384334"
                     data-section="requests"
                     role="tabpanel"
-                    aria-labelledby="requests-tab-6222603065adf622260305c1c334"
+                    aria-labelledby="requests-tab-62286fff5e4a162286fff5384334"
 
                 >
                     
@@ -1205,7 +1244,7 @@ document.body.className += ' jsenabled';
                     aria-hidden="true"
                     data-region="view-conversation"
                     data-user-id="7475"
-                    data-midnight="1646416800"
+                    data-midnight="1646762400"
                     data-message-poll-min="10"
                     data-message-poll-max="120"
                     data-message-poll-after-max="300"
@@ -1535,7 +1574,7 @@ document.body.className += ' jsenabled';
                         style="overflow-y: auto"
                     ></div>
                 </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="7475">
-                    <div id="message-drawer-view-overview-container-6222603065adf622260305c1c334" class="d-flex flex-column h-100" style="overflow-y: auto">
+                    <div id="message-drawer-view-overview-container-62286fff5e4a162286fff5384334" class="d-flex flex-column h-100" style="overflow-y: auto">
                             
                             
                             <div
@@ -1546,9 +1585,9 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-favourites-target-6222603065adf622260305c1c334"
+                                        data-target="#view-overview-favourites-target-62286fff5e4a162286fff5384334"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-favourites-target-6222603065adf622260305c1c334"
+                                        aria-controls="view-overview-favourites-target-62286fff5e4a162286fff5384334"
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1576,9 +1615,9 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="7475"
-                                            id="view-overview-favourites-target-6222603065adf622260305c1c334"
+                                            id="view-overview-favourites-target-62286fff5e4a162286fff5384334"
             aria-labelledby="view-overview-favourites-toggle"
-            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+            data-parent="#message-drawer-view-overview-container-62286fff5e4a162286fff5384334"
 
                             >
                                 
@@ -1609,9 +1648,9 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-group-messages-target-6222603065adf622260305c1c334"
+                                        data-target="#view-overview-group-messages-target-62286fff5e4a162286fff5384334"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-group-messages-target-6222603065adf622260305c1c334"
+                                        aria-controls="view-overview-group-messages-target-62286fff5e4a162286fff5384334"
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1639,9 +1678,9 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="7475"
-                                            id="view-overview-group-messages-target-6222603065adf622260305c1c334"
+                                            id="view-overview-group-messages-target-62286fff5e4a162286fff5384334"
             aria-labelledby="view-overview-group-messages-toggle"
-            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+            data-parent="#message-drawer-view-overview-container-62286fff5e4a162286fff5384334"
 
                             >
                                 
@@ -1672,9 +1711,9 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-messages-target-6222603065adf622260305c1c334"
+                                        data-target="#view-overview-messages-target-62286fff5e4a162286fff5384334"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-messages-target-6222603065adf622260305c1c334"
+                                        aria-controls="view-overview-messages-target-62286fff5e4a162286fff5384334"
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1702,9 +1741,9 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="7475"
-                                            id="view-overview-messages-target-6222603065adf622260305c1c334"
+                                            id="view-overview-messages-target-62286fff5e4a162286fff5384334"
             aria-labelledby="view-overview-messages-toggle"
-            data-parent="#message-drawer-view-overview-container-6222603065adf622260305c1c334"
+            data-parent="#message-drawer-view-overview-container-62286fff5e4a162286fff5384334"
 
                             >
                                 
@@ -1793,10 +1832,10 @@ document.body.className += ' jsenabled';
                                                 type="radio"
                                                 name="message_blocknoncontacts"
                                                 class="custom-control-input"
-                                                id="block-noncontacts-6222603065adf622260305c1c334-1"
+                                                id="block-noncontacts-62286fff5e4a162286fff5384334-1"
                                                 value="1"
                                             >
-                                            <label class="custom-control-label ml-2" for="block-noncontacts-6222603065adf622260305c1c334-1">
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-62286fff5e4a162286fff5384334-1">
                                                 Только мои контакты
                                             </label>
                                         </div>
@@ -1805,10 +1844,10 @@ document.body.className += ' jsenabled';
                                                 type="radio"
                                                 name="message_blocknoncontacts"
                                                 class="custom-control-input"
-                                                id="block-noncontacts-6222603065adf622260305c1c334-0"
+                                                id="block-noncontacts-62286fff5e4a162286fff5384334-0"
                                                 value="0"
                                             >
-                                            <label class="custom-control-label ml-2" for="block-noncontacts-6222603065adf622260305c1c334-0">
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-62286fff5e4a162286fff5384334-0">
                                                 Мои контакты и любой в моих курсах
                                             </label>
                                         </div>
@@ -1822,8 +1861,8 @@ document.body.className += ' jsenabled';
                             <h3 class="mb-2 mt-4 h6 font-weight-bold">Основные</h3>
                             <div data-preference="entertosend">
                                 <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-6222603065adf622260305c1c334" >
-                                    <label class="custom-control-label" for="enter-to-send-6222603065adf622260305c1c334">
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-62286fff5e4a162286fff5384334" >
+                                    <label class="custom-control-label" for="enter-to-send-62286fff5e4a162286fff5384334">
                                         Использовать Enter для отправки
                                     </label>
                                 </div>
@@ -2118,7 +2157,7 @@ document.body.className += ' jsenabled';
             <div id="course-footer"></div>
     
     
-            <div class="logininfo">Вы зашли под именем <a href="https://do.omgau.ru/user/profile.php?id=7475" title="Просмотр профиля">Данил Андреевич Демин</a> (<a href="https://do.omgau.ru/login/logout.php?sesskey=WbDlg5PPQl">Выход</a>)</div>
+            <div class="logininfo">Вы зашли под именем <a href="https://do.omgau.ru/user/profile.php?id=7475" title="Просмотр профиля">Данил Андреевич Демин</a> (<a href="https://do.omgau.ru/login/logout.php?sesskey=ZgxfJZCB9m">Выход</a>)</div>
             <div class="tool_usertours-resettourcontainer"></div>
             <div class="homelink"><a href="https://do.omgau.ru/">В начало</a></div>
             <nav class="nav navbar-nav d-md-none" aria-label="Настраиваемое меню">
@@ -2182,12 +2221,12 @@ function legacy_activity_onclick_handler_4(e) { e.halt(); window.open('https://d
 function legacy_activity_onclick_handler_5(e) { e.halt(); window.open('https://do.omgau.ru/mod/url/view.php?id=201883&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
 
     require(['core/yui'], function(Y) {
-            Y.on('click', legacy_activity_onclick_handler_1, '#random622260305c1c37_label_3_11', null);
+            Y.on('click', legacy_activity_onclick_handler_1, '#random62286fff538437_label_3_11', null);
     });
 ;
 
     require(['core/yui'], function(Y) {
-            Y.on('click', legacy_activity_onclick_handler_2, '#random622260305c1c37_label_3_12', null);
+            Y.on('click', legacy_activity_onclick_handler_2, '#random62286fff538437_label_3_12', null);
     });
 ;
 M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("4"); M.util.js_complete('block_navigation/navblock');});;
@@ -2203,7 +2242,7 @@ function(
     $,
     Main
 ) {
-    var root = $('#block-myoverview-6222603062ac2622260305c1c318');
+    var root = $('#block-myoverview-62286fff5b2d562286fff5384318');
     Main.init(root);
 });
 ;
@@ -2217,7 +2256,7 @@ function(
     $,
     Main
 ) {
-    var root = $('#block-recentlyaccessedcourses-62226030630a7622260305c1c319');
+    var root = $('#block-recentlyaccessedcourses-62286fff5b8ea62286fff5384319');
     var userid = root.attr('data-userid');
 
     Main.init(userid, root);
@@ -2225,11 +2264,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select622260305c1c322', [CustomEvents.events.accessibleChange]);
-    $('#single_select622260305c1c322').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select62286fff5384322', [CustomEvents.events.accessibleChange]);
+    $('#single_select62286fff5384322').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f622260305c1c321').submit();
+            $('#single_select_f62286fff5384321').submit();
         }
     });
 });
@@ -2252,23 +2291,23 @@ function(
     $,
     Popover
 ) {
-    var toggle = $('#message-drawer-toggle-62226030647a4622260305c1c325');
+    var toggle = $('#message-drawer-toggle-62286fff5d0bc62286fff5384325');
     Popover.init(toggle);
 });
 ;
 
 require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
-    var root = $('#message-drawer-6222603065adf622260305c1c334');
-    MessageDrawer.init(root, '6222603065adf622260305c1c334', false);
+    var root = $('#message-drawer-62286fff5e4a162286fff5384334');
+    MessageDrawer.init(root, '62286fff5e4a162286fff5384334', false);
 });
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select622260305c1c336', [CustomEvents.events.accessibleChange]);
-    $('#single_select622260305c1c336').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select62286fff5384336', [CustomEvents.events.accessibleChange]);
+    $('#single_select62286fff5384336').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f622260305c1c335').submit();
+            $('#single_select_f62286fff5384335').submit();
         }
     });
 });
@@ -2298,7 +2337,7 @@ M.str = {"moodle":{"lastmodified":"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random622260305c1c337'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random622260305c1c337'); });
+ M.util.js_pending('random62286fff5384337'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random62286fff5384337'); });
 })();
 //]]>
 </script>
