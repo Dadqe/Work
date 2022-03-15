@@ -65,7 +65,7 @@ while True:
             break
             
     if data:
-        with open('data3.txt', "w", encoding='utf-8') as file:
+        with open('data.txt', "w", encoding='utf-8') as file:
             file.writelines([f"{line}\n" for line in data])
         os.startfile(r'data.txt')
     

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://lki.tax.nalog.ru/tech/new.php?page=5 -->
+<html lang="ru" class="bx-no-touch bx-no-retina bx-chrome bx-boxshadow bx-borderradius bx-flexwrap bx-boxdirection bx-transition bx-transform"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="image/x-icon" href="https://lki.tax.nalog.ru/bitrix/templates/tech_1_1/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./Кабинет инженера_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./Кабинет инженера_files/datepicker3.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="./Кабинет инженера_files/bootstrap-timepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="./Кабинет инженера_files/common.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/jstree.min.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/jquery-ui.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/jquery.fileupload.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/jquery.minicolors.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/jquery.fileupload-ui.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/bootstrap-treeview.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/bootstrap-multiselect.css">
+	<link rel="stylesheet" href="./Кабинет инженера_files/query-builder.default.min.css">
+	<!-- CSS adjustments for browsers with JavaScript disabled -->
+	<noscript><link rel="stylesheet" href="/bitrix/templates/tech_1_1/css/jquery.fileupload-noscript.css"></noscript>
+	<noscript><link rel="stylesheet" href="/bitrix/templates/tech_1_1/css/jquery.fileupload-ui-noscript.css"></noscript>
+	<link rel="stylesheet" href="./Кабинет инженера_files/user-styles-update.css">
+
+
+	
+<meta name="robots" content="index, follow">
+<link href="./Кабинет инженера_files/kernel_main.css" type="text/css" rel="stylesheet">
+<link href="./Кабинет инженера_files/template_306a17c683384a3ff1dae584b013df62_c277941731ae0c287c542177646ee560.css" type="text/css" data-template-style="true" rel="stylesheet">
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'WEEK_START':'1'});(window.BX||top.BX).message({'MONTH_1':'Январь','MONTH_2':'Февраль','MONTH_3':'Март','MONTH_4':'Апрель','MONTH_5':'Май','MONTH_6':'Июнь','MONTH_7':'Июль','MONTH_8':'Август','MONTH_9':'Сентябрь','MONTH_10':'Октябрь','MONTH_11':'Ноябрь','MONTH_12':'Декабрь','MONTH_1_S':'Января','MONTH_2_S':'Февраля','MONTH_3_S':'Марта','MONTH_4_S':'Апреля','MONTH_5_S':'Мая','MONTH_6_S':'Июня','MONTH_7_S':'Июля','MONTH_8_S':'Августа','MONTH_9_S':'Сентября','MONTH_10_S':'Октября','MONTH_11_S':'Ноября','MONTH_12_S':'Декабря','MON_1':'Янв','MON_2':'Фев','MON_3':'Мар','MON_4':'Апр','MON_5':'Май','MON_6':'Июн','MON_7':'Июл','MON_8':'Авг','MON_9':'Сен','MON_10':'Окт','MON_11':'Ноя','MON_12':'Дек','DAY_OF_WEEK_0':'Воскресенье','DAY_OF_WEEK_1':'Понедельник','DAY_OF_WEEK_2':'Вторник','DAY_OF_WEEK_3':'Среда','DAY_OF_WEEK_4':'Четверг','DAY_OF_WEEK_5':'Пятница','DAY_OF_WEEK_6':'Суббота','DOW_0':'Вс','DOW_1':'Пн','DOW_2':'Вт','DOW_3':'Ср','DOW_4':'Чт','DOW_5':'Пт','DOW_6':'Сб','FD_SECOND_AGO_0':'#VALUE# секунд назад','FD_SECOND_AGO_1':'#VALUE# секунду назад','FD_SECOND_AGO_10_20':'#VALUE# секунд назад','FD_SECOND_AGO_MOD_1':'#VALUE# секунду назад','FD_SECOND_AGO_MOD_2_4':'#VALUE# секунды назад','FD_SECOND_AGO_MOD_OTHER':'#VALUE# секунд назад','FD_SECOND_DIFF_0':'#VALUE# секунд','FD_SECOND_DIFF_1':'#VALUE# секунда','FD_SECOND_DIFF_10_20':'#VALUE# секунд','FD_SECOND_DIFF_MOD_1':'#VALUE# секунда','FD_SECOND_DIFF_MOD_2_4':'#VALUE# секунды','FD_SECOND_DIFF_MOD_OTHER':'#VALUE# секунд','FD_MINUTE_AGO_0':'#VALUE# минут назад','FD_MINUTE_AGO_1':'#VALUE# минуту назад','FD_MINUTE_AGO_10_20':'#VALUE# минут назад','FD_MINUTE_AGO_MOD_1':'#VALUE# минуту назад','FD_MINUTE_AGO_MOD_2_4':'#VALUE# минуты назад','FD_MINUTE_AGO_MOD_OTHER':'#VALUE# минут назад','FD_MINUTE_DIFF_0':'#VALUE# минут','FD_MINUTE_DIFF_1':'#VALUE# минута','FD_MINUTE_DIFF_10_20':'#VALUE# минут','FD_MINUTE_DIFF_MOD_1':'#VALUE# минута','FD_MINUTE_DIFF_MOD_2_4':'#VALUE# минуты','FD_MINUTE_DIFF_MOD_OTHER':'#VALUE# минут','FD_MINUTE_0':'#VALUE# минут','FD_MINUTE_1':'#VALUE# минуту','FD_MINUTE_10_20':'#VALUE# минут','FD_MINUTE_MOD_1':'#VALUE# минуту','FD_MINUTE_MOD_2_4':'#VALUE# минуты','FD_MINUTE_MOD_OTHER':'#VALUE# минут','FD_HOUR_AGO_0':'#VALUE# часов назад','FD_HOUR_AGO_1':'#VALUE# час назад','FD_HOUR_AGO_10_20':'#VALUE# часов назад','FD_HOUR_AGO_MOD_1':'#VALUE# час назад','FD_HOUR_AGO_MOD_2_4':'#VALUE# часа назад','FD_HOUR_AGO_MOD_OTHER':'#VALUE# часов назад','FD_HOUR_DIFF_0':'#VALUE# часов','FD_HOUR_DIFF_1':'#VALUE# час','FD_HOUR_DIFF_10_20':'#VALUE# часов','FD_HOUR_DIFF_MOD_1':'#VALUE# час','FD_HOUR_DIFF_MOD_2_4':'#VALUE# часа','FD_HOUR_DIFF_MOD_OTHER':'#VALUE# часов','FD_YESTERDAY':'вчера','FD_TODAY':'сегодня','FD_TOMORROW':'завтра','FD_DAY_AGO_0':'#VALUE# суток назад','FD_DAY_AGO_1':'#VALUE# сутки назад','FD_DAY_AGO_10_20':'#VALUE# суток назад','FD_DAY_AGO_MOD_1':'#VALUE# сутки назад','FD_DAY_AGO_MOD_2_4':'#VALUE# суток назад','FD_DAY_AGO_MOD_OTHER':'#VALUE# суток назад','FD_DAY_DIFF_0':'#VALUE# дней','FD_DAY_DIFF_1':'#VALUE# день','FD_DAY_DIFF_10_20':'#VALUE# дней','FD_DAY_DIFF_MOD_1':'#VALUE# день','FD_DAY_DIFF_MOD_2_4':'#VALUE# дня','FD_DAY_DIFF_MOD_OTHER':'#VALUE# дней','FD_DAY_AT_TIME':'#DAY# в #TIME#','FD_MONTH_AGO_0':'#VALUE# месяцев назад','FD_MONTH_AGO_1':'#VALUE# месяц назад','FD_MONTH_AGO_10_20':'#VALUE# месяцев назад','FD_MONTH_AGO_MOD_1':'#VALUE# месяц назад','FD_MONTH_AGO_MOD_2_4':'#VALUE# месяца назад','FD_MONTH_AGO_MOD_OTHER':'#VALUE# месяцев назад','FD_MONTH_DIFF_0':'#VALUE# месяцев','FD_MONTH_DIFF_1':'#VALUE# месяц','FD_MONTH_DIFF_10_20':'#VALUE# месяцев','FD_MONTH_DIFF_MOD_1':'#VALUE# месяц','FD_MONTH_DIFF_MOD_2_4':'#VALUE# месяца','FD_MONTH_DIFF_MOD_OTHER':'#VALUE# месяцев','FD_YEARS_AGO_0':'#VALUE# лет назад','FD_YEARS_AGO_1':'#VALUE# год назад','FD_YEARS_AGO_10_20':'#VALUE# лет назад','FD_YEARS_AGO_MOD_1':'#VALUE# год назад','FD_YEARS_AGO_MOD_2_4':'#VALUE# года назад','FD_YEARS_AGO_MOD_OTHER':'#VALUE# лет назад','FD_YEARS_DIFF_0':'#VALUE# лет','FD_YEARS_DIFF_1':'#VALUE# год','FD_YEARS_DIFF_10_20':'#VALUE# лет','FD_YEARS_DIFF_MOD_1':'#VALUE# год','FD_YEARS_DIFF_MOD_2_4':'#VALUE# года','FD_YEARS_DIFF_MOD_OTHER':'#VALUE# лет','CAL_BUTTON':'Выбрать','CAL_TIME_SET':'Установить время','CAL_TIME':'Время'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'141075','SERVER_TIME':'1647248906','SERVER_TZ_OFFSET':'10800','USER_TZ_OFFSET':'14400','USER_TZ_AUTO':'N','bitrix_sessid':'8df4c324b9aafd539592589afe96bee4','SITE_ID':'s1'});</script>
+
+
+<script type="text/javascript" src="./Кабинет инженера_files/kernel_main.js.Без названия"></script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css']); </script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js']); </script>
+
+<script type="text/javascript">
+bxSession.mess.messSessExpired = 'Ваш сеанс работы с сайтом завершен из-за отсутствия активности в течение 24 мин. Введенные на странице данные не будут сохранены. Скопируйте их перед тем, как закроете или обновите страницу.';
+bxSession.Expand(1440, '8df4c324b9aafd539592589afe96bee4', true, '3c2b6a2acf071bd844ec2eff9dfe064a');
+</script>
+
+	<title>Кабинет инженера</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 10]>
+	  <style>
+		.popup {
+		    border-top: 1px solid #eee;
+		    border-left: 1px solid #ddd;
+		    border-right: 1px solid #ddd;
+		    border-bottom: 1px solid #ccc;
+		}
+	  </style>
+	<![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="/bitrix/templates/tech_1_1/js/html5shiv.min.js"></script>
+      <script src="/bitrix/templates/tech_1_1/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative; padding: 50px 0; color: red; font-size: 24px; line-height: 40px;'>
+			Ваш браузер устарел!<br/>
+			Для корректного отображения сайта установите <a href="http://windows.microsoft.com/ru-RU/internet-explorer/download-ie" style="color: red; font-size: 24px; line-height: 40px; text-decoration:underline">новую версию Internet Explorer</a>. Это просто и бесплатно!<br/>
+		</div>
+	<![endif]-->
+
+  <style type="text/css" media="print">.tableFloatingHeader{display:none !important;}.tableFloatingHeaderOriginal{position:static !important;}</style></head>
+  <body>
+	<div id="panel"></div>
+
+
+	<div class="header new no-print">
+        <div class="centerwrap">
+            <span class="site_title">
+				  <a href="https://lki.tax.nalog.ru/">
+					Портал ФКУ "Налог-Сервис" ФНС России
+				  </a>
+				</span>
+            
+            <div id="lk-menu">
+                              <a class="btn btn-primary" id="actModal"><i class="glyphicon glyphicon-pencil"></i> Акт ТС</a>
+                              <!-- Single button -->
+                <div class="btn-group">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<div class="pull-left userblock" style="text-align: right">
+		<strong>Дёмин Д. А.</strong>
+<!--		--><!--		--><!--		--><!--		--><!--		--><!-- -->
+<!--		--><!-- -->
+<!--		-->	</div>                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="disabled"><a>Дёмин Дмитрий Андреевич</a></li>
+                        <li class="disabled"><a>(инженер)</a></li>
+<!--                        <li><a href="#">Action</a></li>-->
+<!--                        <li><a href="#">Another action</a></li>-->
+<!--                        <li><a href="#">Something else here</a></li>-->
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://lki.tax.nalog.ru/?logout=yes">Выйти</a></li>
+                    </ul>
+                </div>
+                <a href="https://lki.tax.nalog.ru/tech/"><nobr>Личный кабинет</nobr></a>
+            </div>
+        </div>
+	</div>
+	<div class="main new">
+		<div class="centerwrap">
+
+			<div class="main-top">
+
+			</div>
+			<div class="clear"></div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="no-print">Заявки (ТУ)</h2>
+                </div>
+            </div>
+
+				
+<input type="hidden" value="0" class="remembered_active"><input type="hidden" value="2022.03.14 12:08:26" class="notchtime"><input type="hidden" value="/upload/notches/n5500/n5500-00-157.json" class="notchlink"><input type="hidden" id="colsOrder" value="null"><input type="hidden" id="colorSettings" value="null"><input type="hidden" id="openRequestInNewTab" value="null"><input type="hidden" id="useOldTooltipsStyle" value="null"><input type="hidden" id="donUseDefaultPriorityStyle" value="null"><div class="hidden">
+	</div>
+<div class="list-wrap">
+    <div style="margin-left: 10px; padding-top: 7px;" class="pull-right">
+    <a class="btn btn-primary pull-right" href="https://lki.tax.nalog.ru/tech/new.php?page=5#" data-remote="false" role="button" data-toggle="modal" data-target="#setFilter" style="margin-left: 10px;">Фильтр обращений</a>
+      </div>
+  <ul class="nav nav-tabs techmenu" role="tablist" style="margin-top: 40px;">
+  <li><a href="https://lki.tax.nalog.ru/tech/">На выполнении</a></li>
+  <li class="active"><a href="https://lki.tax.nalog.ru/tech/new.php">Новые</a></li>
+  <li><a href="https://lki.tax.nalog.ru/tech/end.php">Истекают</a></li>
+  <li><a href="https://lki.tax.nalog.ru/tech/expired.php">Просрочены</a></li>
+    <li><a href="https://lki.tax.nalog.ru/tech/all.php">Все</a></li>
+  <li><a href="https://lki.tax.nalog.ru/tech/closed.php">Завершенные</a></li>
+  <li class="pull-right "><a href="https://lki.tax.nalog.ru/tech/settings.php">Настройки</a></li>
+</ul>
+  <div class="clear"></div>
+
+  <input type="hidden" class="autorefresh" value="1">
+  <div class="clear"></div>
+
+  <div class="reports-result-list-wrap">
+    <div class="topscroll">
+      <div style="width: 1872px;">&nbsp;</div>
+    </div>
+    <div class="report-table-wrap table-responsive">
+      <div class="alert alert-info" id="noColsMessage" role="alert" style="display: none; width: 600px; margin: 0 auto">
+        Похоже все столбцы скрыты с помощью настроек. Возможно стоит вернуть несколько.
+      </div>
+      <table class="reports-list-table table table-bordered" id="report-result-table" style="padding: 0px;">
+        <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; top: 0px; left: 47.5781px; z-index: 3; width: 1874px;">
+
+        <!-- head -->
+        <tr>
+                        <th class="reports-head-cell" colid="ID" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell" style="padding-left: 0px; padding-right: 0px">
+                                      <span class="reports-head-cell-title">#</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NOMER" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Номер ТУ</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NOMER_BU" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER_BU&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER_BU&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Номер БУ</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DATECREATED" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATECREATED&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATECREATED&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Дата создания</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NAME" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Услуга</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DESCRIPTION" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DESCRIPTION&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DESCRIPTION&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Описание</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DATEENDPLANNED" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATEENDPLANNED&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up active" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATEENDPLANNED&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Крайний срок завершения</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_STAGE_NAME" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_STAGE_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_STAGE_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Этап</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_SONO" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_SONO&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_SONO&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">СОНО</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_EKP_CODE" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EKP_CODE&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EKP_CODE&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Код ЭКП</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_ADDSTATUS_GUID" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_ADDSTATUS_GUID&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_ADDSTATUS_GUID&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Доп.статус</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="INITIATOR_NAME" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=INITIATOR_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=INITIATOR_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Заявитель</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_EXECUTOR_LOGIN" style="min-width: 0px; max-width: none;">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EXECUTOR_LOGIN&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EXECUTOR_LOGIN&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Исполнитель</span>
+                                  </div>
+              </th>
+                      <th class="hidden" style="min-width: 0px; max-width: none;">
+            Приоритет
+          </th>
+        </tr>
+        </thead><thead class="tableFloatingHeader" style="opacity: 0; display: none;">
+
+        <!-- head -->
+        <tr>
+                        <th class="reports-head-cell" colid="ID">
+                <div class="reports-head-cell" style="padding-left: 0px; padding-right: 0px">
+                                      <span class="reports-head-cell-title">#</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NOMER">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Номер ТУ</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NOMER_BU">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER_BU&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NOMER_BU&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Номер БУ</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DATECREATED">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATECREATED&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATECREATED&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Дата создания</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_NAME">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Услуга</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DESCRIPTION">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DESCRIPTION&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DESCRIPTION&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Описание</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_DATEENDPLANNED">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATEENDPLANNED&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up active" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_DATEENDPLANNED&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Крайний срок завершения</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_STAGE_NAME">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_STAGE_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_STAGE_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Этап</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_SONO">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_SONO&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_SONO&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">СОНО</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_EKP_CODE">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EKP_CODE&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EKP_CODE&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Код ЭКП</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_ADDSTATUS_GUID">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_ADDSTATUS_GUID&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_ADDSTATUS_GUID&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Доп.статус</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="INITIATOR_NAME">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=INITIATOR_NAME&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=INITIATOR_NAME&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Заявитель</span>
+                                  </div>
+              </th>
+                          <th class="reports-head-cell" colid="UF_EXECUTOR_LOGIN">
+                <div class="reports-head-cell">
+                                      <span class="arrows">
+									<a class="sort arrow-down unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EXECUTOR_LOGIN&amp;by=DESC&amp;page=5"></a>
+									<a class="sort arrow-up unactive" href="https://lki.tax.nalog.ru/tech/new.php?sort=UF_EXECUTOR_LOGIN&amp;by=ASC&amp;page=5"></a>
+								</span>
+                    <span class="reports-head-cell-title space-for-sort">Исполнитель</span>
+                                  </div>
+              </th>
+                      <th class="hidden">
+            Приоритет
+          </th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <!-- data -->
+        
+            <tr class="list-item" rel="2022-ТУ00000000001367002">
+                              <td class="col_id">
+                  101                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367002                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001177850                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:23                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.1 Установка и  настройка клиентской части прикладных программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">перенести рабочую станцию 14001205 в кабинет 242</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367003">
+                              <td class="col_id">
+                  102                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367003                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001177850                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:20                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Ведение ЭПО .Ввод и актуализация информации в информационный ресурс ЭПО (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">перенести рабочую станцию 14001205 в кабинет 242</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367262">
+                              <td class="col_id">
+                  103                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367262                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178088                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:20                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">опер зал настройка чата</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367266">
+                              <td class="col_id">
+                  104                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367266                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178153                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:20                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">104 настроить лотус</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367282">
+                              <td class="col_id">
+                  105                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367282                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178176                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:21                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">236 установить справки бк</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367285">
+                              <td class="col_id">
+                  106                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367285                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178177                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:21                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">236 вынести ярлык справки бк</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367288">
+                              <td class="col_id">
+                  107                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367288                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178208                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">236 вынести ярлык справки бк</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001367322">
+                              <td class="col_id">
+                  108                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001367322                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001178058                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.7.3 Устранение сбоев в работе операционных систем рабочих станций</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">опер зал настройка пользователя</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    17.03.2022 14:15:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001394731">
+                              <td class="col_id">
+                  109                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001394731                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001188899                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Ведение ЭПО .Ввод и актуализация информации в информационный ресурс ЭПО (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Шарипова, из 609 в 610 тел.16-91</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 10:30:05                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5542                  </td>
+                                  <td class="col_sono">
+                    55039                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Диденко Ольга Юрьевна                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395492">
+                              <td class="col_id">
+                  110                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395492                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203461                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 5. Обеспечение работоспособности СУБД (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Проверка работы всех служб СУБД;
+2. Проверка журнала ОС на предмет наличия ошибочных событий, относящихся к функционированию служб СУБД; S Анализ лог-файлов СУБД на наличие ошибок; 
+3. Проверка наличия свободного места на дисках с БД.
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5501_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395497">
+                              <td class="col_id">
+                  111                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395497                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203466                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 7. Обеспечение работоспособности САЗ. (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Проверка работоспособности служб САЗ;
+2. Мониторинг состояния серверов и рабочих станций: актуальность антивирусной базы, обновлений версий;
+3. Проверка статусных сообщений в консоли администрирования САЗ;
+4. Уведомление АИБ НО о наличии рабочих станций и серверов со статусом «критический» и «предупреждение»;
+5. Анализ вирусной активности и выявление источников заражения.
+
+г. Омск, ул. Космический проспект, д.18В</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5542                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5542_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001400099">
+                              <td class="col_id">
+                  112                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001400099                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001207460                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:20:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">5.19.3 Устранение технических сбоев в работе программных комплексов ФНС России</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">104 настроить лотус</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                    55001                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    Мальцев Максим Сергеевич                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395501">
+                              <td class="col_id">
+                  113                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395501                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203469                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 14:12:30                    </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Обеспечение работоспособности САЗ. (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Проверка работоспособности служб САЗ;
+2. Мониторинг состояния серверов и рабочих станций: актуальность антивирусной базы, обновлений версий;
+3. Проверка статусных сообщений в консоли администрирования САЗ;
+4. Уведомление АИБ НО о наличии рабочих станций и серверов со статусом «критический» и «предупреждение»;
+5. Анализ вирусной активности и выявление источников заражения.
+
+г. Омск ул.  Суворова 1А</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5507                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5507_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402149">
+                              <td class="col_id">
+                  114                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402149                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209380                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:43:52                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+г. Омск, ул. Космический проспект, д.18В</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5542                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5542_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395504">
+                              <td class="col_id">
+                  115                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395504                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203471                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 03:23:02                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 7. Обеспечение работоспособности САЗ. (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Проверка работоспособности служб САЗ;
+2. Мониторинг состояния серверов и рабочих станций: актуальность антивирусной базы, обновлений версий;
+3. Проверка статусных сообщений в консоли администрирования САЗ;
+4. Уведомление АИБ НО о наличии рабочих станций и серверов со статусом «критический» и «предупреждение»;
+5. Анализ вирусной активности и выявление источников заражения.</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5501_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402152">
+                              <td class="col_id">
+                  116                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402152                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209384                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:00                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+г. Омск ул.  Суворова 1А </div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5507                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5507_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402158">
+                              <td class="col_id">
+                  117                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402158                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209386                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:05                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5501_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395511">
+                              <td class="col_id">
+                  118                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395511                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203476                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 03:23:14                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 8. Обеспечение работоспособности СЭД внешних почтовых ящиков (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Анализ журналов Log.nsf (сообщения об ошибках, предупреждениях и прочее); 
+2. Мониторинг проблемной исходящей почты (Mailbox и Log.nsf);
+3. Мониторинг работы служб в соответствии с инструкциями разработчика и требованиями ФНС России.
+
+
+г. Омск, ул. Космический проспект, д.18В</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5542                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5542_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402160">
+                              <td class="col_id">
+                  119                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402160                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209388                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:10                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    N5500                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    n5500_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402161">
+                              <td class="col_id">
+                  120                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402161                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209389                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:13                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    N5500                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    n5500_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402165">
+                              <td class="col_id">
+                  121                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402165                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209394                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:15                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    N5500                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    n5500_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395516">
+                              <td class="col_id">
+                  122                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395516                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203480                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 03:23:23                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 8. Обеспечение работоспособности СЭД внешних почтовых ящиков (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Анализ журналов Log.nsf (сообщения об ошибках, предупреждениях и прочее); 
+2. Мониторинг проблемной исходящей почты (Mailbox и Log.nsf);
+3. Мониторинг работы служб в соответствии с инструкциями разработчика и требованиями ФНС России.
+
+
+г. Омск ул.  Суворова 1А</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5507                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5507_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402166">
+                              <td class="col_id">
+                  123                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402166                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209395                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:18                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    N5500                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    n5500_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001395519">
+                              <td class="col_id">
+                  124                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001395519                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001203481                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 03:23:26                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 8. Обеспечение работоспособности СЭД внешних почтовых ящиков (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Анализ журналов Log.nsf (сообщения об ошибках, предупреждениях и прочее); 
+2. Мониторинг проблемной исходящей почты (Mailbox и Log.nsf);
+3. Мониторинг работы служб в соответствии с инструкциями разработчика и требованиями ФНС России.
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    5501                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    5501_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+            <tr class="list-item" rel="2022-ТУ00000000001402168">
+                              <td class="col_id">
+                  125                </td>
+                                  <td class="col_nomer">
+                    2022-ТУ00000000001402168                  </td>
+                                  <td class="col_nomer">
+                    2022-0000000000001209398                  </td>
+                                  <td class="col_datecreate">
+                    14.03.2022 06:44:20                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Профилактические работы. 1. Визуальный контроль: серверного оборудования, ТКУ, УАТС, активного сетевого оборудования (ТУ)</div>
+                    </div>
+                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">1. Визуальный контроль индикации ошибок работоспособности серверного оборудования, в том числе серверных ИБП в соответствии с документацией на оборудование;  
+2. Визуальный контроль индикации ошибок телекоммуникационного оборудования, УАТС и активного сетевого оборудования в соответствии с документацией; 
+3. Проверка климатических параметров серверного помещения.
+
+</div>
+                    </div>
+                  </td>
+                                                <td class="col_dateend">
+                    18.03.2022 13:00:00                  </td>
+                                  <td class="col_stage_name">
+                    Выполнение                  </td>
+                                  <td class="col_sono">
+                    N5500                  </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_sono">
+                                      </td>
+                                  <td class="col_initiator">
+                    n5500_ФКУ_регламентные_работы                  </td>
+                                  <td class="hiddable col_jobtype">
+                    <span></span>
+                    <div class="hiddable1">
+                      <div class="hiddable2">Омская область</div>
+                    </div>
+                  </td>
+                              <td class="col_dateend hidden">
+                Низкий              </td>
+            </tr>
+
+          
+        </tbody>
+      </table>
+
+      <form class="form-inline" role="form" style="float: right;" method="post">
+        <div class="form-group" style="margin: 20px 0;">
+          <select class="form-control trequestsperpage" name="trequestsperpage">
+            <option value="25" selected="selected">25
+            </option>
+            <option value="50">50
+            </option>
+            <option value="100">100
+            </option>
+            </select>
+        </div>
+      </form>
+
+      <div class="navigation_block">
+        
+			<nav>
+				<ul class="pagination"><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=1">1</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=2">2</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=3">3</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=4">4</a></li><li class="active"><a href="https://lki.tax.nalog.ru/tech/new.php?page=5">5 <span class="sr-only">(current)</span></a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=6">6</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=7">7</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=8">8</a></li><li class="disabled"><a>...</a></li><li><a href="https://lki.tax.nalog.ru/tech/new.php?page=10">10</a></li>
+			  </ul>
+			</nav>	      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+</div>
+				</div>
+		</div>
+		
+		<div class="curversion no-print">
+			<div class="centerwrap">
+				<!--Актуальные версии:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					КПЭ АИС «Налог-3» - 17.12.6.1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					АИС3 «Налог-ЦОД» - 2.05.11.25,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Транспорт ЭА ТУ - 1.36.0.0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					АИС ФЦОД -&nbsp;352.17.01-->			</div>
+		</div>
+		<div class="footer no-print">
+			<div class="centerwrap">
+				<a href="https://lki.tax.nalog.ru/forum/">Форум</a> &nbsp; &nbsp;
+				<div class="pull-right">
+					Релиз 037.7.6					&nbsp;&nbsp;&nbsp;© 2005-2022	Портал ФКУ "Налог-Сервис" ФНС России
+				</div>
+			</div>
+		</div>
+				
+    		<div class="modal fade" id="viewRequest" tabindex="-1" role="dialog" data-backdrop="static">
+			<div class="modal-dialog modal-lg">
+			   <div class="modal-content">
+					<div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
+						<h3 class="modal-title" id="myModalLabel">
+							Обращение &nbsp;&nbsp;&nbsp;
+						</h3>
+					</div>
+				    <div class="modal-body">	
+						<br><br><br><br><br><br><br><br><br>
+						<div class="load"></div>
+				    </div>
+			  </div>
+			  <div class="viewRequest_default" style="display: none;">
+					<div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
+						<h3 class="modal-title" id="myModalLabel">
+							Обращение &nbsp;&nbsp;&nbsp;
+						</h3>
+					</div>
+				    <div class="modal-body">	
+						<br><br><br><br><br><br><br><br><br>
+						<div class="load"></div>
+				    </div>
+			  </div>
+			</div>
+		 </div>
+    <div class="modal fade" id="TechExecution" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header"> 
+				<button type="button" class="close hidden" data-toggle="modal" data-target="#TechExecution" aria-label="Закрыть"><span aria-hidden="true">×</span></button>
+				<h3 class="modal-title" id="myModalLabel">Принятие заявки на исполнение</h3>
+			</div>
+			<div class="modal-body text-center"><img width="32px" src="./Кабинет инженера_files/loading.gif"></div>
+			<div class="modal-footer"><button type="button" class="btn btn-default hidden" data-target="#TechExecution" data-toggle="modal">OK</button></div>
+		</div>
+	</div>
+</div>
+        <input type="hidden" value="{&quot;start&quot;:&quot;&quot;,&quot;end&quot;:&quot;&quot;,&quot;dep_start&quot;:&quot;&quot;,&quot;dep_end&quot;:&quot;&quot;,&quot;ticket&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;executor&quot;:&quot;&quot;,&quot;techservice&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;no&quot;:[],&quot;ekp&quot;:[]}" id="filterJson4605">
+  <input type="hidden" value="LAST" id="existFiltersNames">
+
+<div class="modal fade" id="setFilter" tabindex="-1" role="dialog" data-backdrop="static">
+  <div class="modal-dialog" style="  width: 900px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h3 style="display: inline-block;">Фильтр</h3> <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" id="filtersMenu">
+                          <li style="display: flex;" class="defaultFilterMenuItem 4605">
+                <button type="button" style="margin: 0 2px 0 20px;" class="btn btn-default btn-xs defaultFilterButton btn-success 4605" onclick="setDefaultFilter(&#39;4605&#39;)" title="Использовать этот фильтр при входе в кабинет"><i class="glyphicon glyphicon-ok"></i></button>
+                                <a href="https://lki.tax.nalog.ru/tech/new.php?page=5#" onclick="loadFilter(&#39;4605&#39;)" style="padding-left: 5px;">Последний использованный</a>
+              </li>
+                          <li role="separator" class="divider" id="lastSeparator"></li>
+            <li>
+              <a href="https://lki.tax.nalog.ru/tech/new.php?page=5#" onclick="saveFilter()"><i class="glyphicon glyphicon-plus" style="color: #00ad46"></i>Сохранить новый</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form action="https://lki.tax.nalog.ru/tech/new.php?page=5" class="filter-form hidden-mobile visible-tablet" method="post" role="form" id="filterForm">
+
+                    <div class="row">
+            <div class="col-md-4">
+                            <div class="row">
+                <div class="col-md-4">
+                  <label for="filter_status" class="filter-label">Этапы</label>
+                </div>
+                <div class="col-md-8">
+                  <span class="multiselect-native-select"><select name="filter[status][]" id="filterStatusSelect" multiple="">
+                                          <option value="Выполнение">Выполнение</option>
+                                          <option value="Закрытие">Закрытие</option>
+                                          <option value="Отказ">Отказ</option>
+                                          <option value="Распределение">Распределение</option>
+                                          <option value="Регистрация">Регистрация</option>
+                                          <option value="Согласование">Согласование</option>
+                                          <option value="Уточнение">Уточнение</option>
+                                          <option value="Завершено">Завершено</option>
+                                          <option value="Запрос на отказ">Запрос на отказ</option>
+                                          <option value="Отложенное выполнение">Отложенное выполнение</option>
+                                          <option value="Передача данных...">Передача данных...</option>
+                                          <option value="Ожидание...">Ожидание...</option>
+                                      </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="-- выберите --"><span class="multiselect-selected-text">-- выберите --</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" value="multiselect-all">  Выбрать все</label></a></li><li><a tabindex="0"><label class="checkbox" title="Выполнение"><input type="checkbox" value="Выполнение"> Выполнение</label></a></li><li><a tabindex="0"><label class="checkbox" title="Закрытие"><input type="checkbox" value="Закрытие"> Закрытие</label></a></li><li><a tabindex="0"><label class="checkbox" title="Отказ"><input type="checkbox" value="Отказ"> Отказ</label></a></li><li><a tabindex="0"><label class="checkbox" title="Распределение"><input type="checkbox" value="Распределение"> Распределение</label></a></li><li><a tabindex="0"><label class="checkbox" title="Регистрация"><input type="checkbox" value="Регистрация"> Регистрация</label></a></li><li><a tabindex="0"><label class="checkbox" title="Согласование"><input type="checkbox" value="Согласование"> Согласование</label></a></li><li><a tabindex="0"><label class="checkbox" title="Уточнение"><input type="checkbox" value="Уточнение"> Уточнение</label></a></li><li><a tabindex="0"><label class="checkbox" title="Завершено"><input type="checkbox" value="Завершено"> Завершено</label></a></li><li><a tabindex="0"><label class="checkbox" title="Запрос на отказ"><input type="checkbox" value="Запрос на отказ"> Запрос на отказ</label></a></li><li><a tabindex="0"><label class="checkbox" title="Отложенное выполнение"><input type="checkbox" value="Отложенное выполнение"> Отложенное выполнение</label></a></li><li><a tabindex="0"><label class="checkbox" title="Передача данных..."><input type="checkbox" value="Передача данных..."> Передача данных...</label></a></li><li><a tabindex="0"><label class="checkbox" title="Ожидание..."><input type="checkbox" value="Ожидание..."> Ожидание...</label></a></li></ul></div></span>
+                </div>
+              </div>
+
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="filter_jobtype" class="filter-label">Приоритет</label>
+                </div>
+                <div class="col-md-8">
+                  <span class="multiselect-native-select"><select name="filter[priority][]" id="filterPrioritySelect" multiple="">
+                                          <option value="D">Низкий</option>
+                                          <option value="C">Средний</option>
+                                          <option value="B">Высокий</option>
+                                          <option value="A">Очень высокий</option>
+                                          <option value="Z">1 очередь - массовая критичная</option>
+                                          <option value="Y">2 очередь - индивидуальная критичная</option>
+                                          <option value="X">3 очередь - массовая некритичная</option>
+                                      </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="-- выберите --"><span class="multiselect-selected-text">-- выберите --</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li><a tabindex="0"><label class="checkbox" title="Низкий"><input type="checkbox" value="D"> Низкий</label></a></li><li><a tabindex="0"><label class="checkbox" title="Средний"><input type="checkbox" value="C"> Средний</label></a></li><li><a tabindex="0"><label class="checkbox" title="Высокий"><input type="checkbox" value="B"> Высокий</label></a></li><li><a tabindex="0"><label class="checkbox" title="Очень высокий"><input type="checkbox" value="A"> Очень высокий</label></a></li><li><a tabindex="0"><label class="checkbox" title="1 очередь - массовая критичная"><input type="checkbox" value="Z"> 1 очередь - массовая критичная</label></a></li><li><a tabindex="0"><label class="checkbox" title="2 очередь - индивидуальная критичная"><input type="checkbox" value="Y"> 2 очередь - индивидуальная критичная</label></a></li><li><a tabindex="0"><label class="checkbox" title="3 очередь - массовая некритичная"><input type="checkbox" value="X"> 3 очередь - массовая некритичная</label></a></li></ul></div></span>
+                </div>
+              </div>
+
+              
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="filterAddStatuses" class="filter-label">Доп. статус</label>
+                </div>
+                <div class="col-md-8 multiselect-div">
+                  <span class="multiselect-native-select"><select name="filter[addstatus][]" id="filterAddStatuses" multiple="">
+                                                                      <option value="5fcdd0ac-9933-11ea-80d2-00155d983600" data-scope="LKI">
+                              Обращение не согласовано                            </option>
+                                                                                            <option value="5fcdd0ad-9933-11ea-80d2-00155d983600" data-scope="LKI">
+                              Обращение отменено                            </option>
+                                                                                            <option value="d972e39e-9691-11eb-80da-00155d984718" data-scope="LKI">
+                              На рассмотрении у ПФР                            </option>
+                                                                                            <option value="86e72086-cf45-11eb-80db-00155d984718" data-scope="LKI">
+                              На рассмотрении в МИ по ЦОД                            </option>
+                                                                                            <option value="cae67121-ff53-11eb-80dc-00155d98531f" data-scope="LKI">
+                              На рассмотрении у методологов                            </option>
+                                                                                            <option value="d16b6c1a-ff53-11eb-80dc-00155d98531f" data-scope="LKI">
+                              На рассмотрении у разработчика                            </option>
+                                                                                            <option value="da230885-ff53-11eb-80dc-00155d98531f" data-scope="LKI">
+                              Ожидается реализация                            </option>
+                                                                                            <option value="dbba83e8-44ec-11eb-80e2-00155d98530e" data-scope="LKI">
+                              Обращение завершено автоматически                            </option>
+                                                                                            <option value="d41bb3a3-8335-11eb-80e4-00155d98481e" data-scope="LKI">
+                              На рассмотрении у НО                            </option>
+                                                                                            <option value="bd4112f8-227c-11ec-80ea-00155d56ad00" data-scope="LKI">
+                              Массовая заявка                            </option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="-- выберите --"><span class="multiselect-selected-text">-- выберите --</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li><a tabindex="0"><label class="checkbox" title="
+                              Обращение не согласовано                            "><input type="checkbox" value="5fcdd0ac-9933-11ea-80d2-00155d983600"> 
+                              Обращение не согласовано                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              Обращение отменено                            "><input type="checkbox" value="5fcdd0ad-9933-11ea-80d2-00155d983600"> 
+                              Обращение отменено                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              На рассмотрении у ПФР                            "><input type="checkbox" value="d972e39e-9691-11eb-80da-00155d984718"> 
+                              На рассмотрении у ПФР                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              На рассмотрении в МИ по ЦОД                            "><input type="checkbox" value="86e72086-cf45-11eb-80db-00155d984718"> 
+                              На рассмотрении в МИ по ЦОД                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              На рассмотрении у методологов                            "><input type="checkbox" value="cae67121-ff53-11eb-80dc-00155d98531f"> 
+                              На рассмотрении у методологов                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              На рассмотрении у разработчика                            "><input type="checkbox" value="d16b6c1a-ff53-11eb-80dc-00155d98531f"> 
+                              На рассмотрении у разработчика                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              Ожидается реализация                            "><input type="checkbox" value="da230885-ff53-11eb-80dc-00155d98531f"> 
+                              Ожидается реализация                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              Обращение завершено автоматически                            "><input type="checkbox" value="dbba83e8-44ec-11eb-80e2-00155d98530e"> 
+                              Обращение завершено автоматически                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              На рассмотрении у НО                            "><input type="checkbox" value="d41bb3a3-8335-11eb-80e4-00155d98481e"> 
+                              На рассмотрении у НО                            </label></a></li><li><a tabindex="0"><label class="checkbox" title="
+                              Массовая заявка                            "><input type="checkbox" value="bd4112f8-227c-11ec-80ea-00155d56ad00"> 
+                              Массовая заявка                            </label></a></li></ul></div></span>
+                </div>
+              </div>
+                            <div class="row">
+                <div class="col-md-12">
+                  <label for="filter_status" class="filter-label">Дата созд.</label>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-daterange" id="datepicker">
+                    <input type="text" class="form-control" name="filter[start]" style="width:50%;display:inline;" placeholder="от" autocomplete="off" value=""><input type="text" class="form-control" name="filter[end]" placeholder="до" autocomplete="off" value="" style="width:50%;display:inline;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="filter_status" class="filter-label">Срок зав.</label>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-daterange" id="datepicker">
+                    <input type="text" class="form-control" name="filter[dep_start]" style="width:50%;display:inline;" placeholder="от" autocomplete="off" value=""><input type="text" class="form-control" name="filter[dep_end]" placeholder="до" autocomplete="off" value="" style="width:50%;display:inline;">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="filter_nomer" class="filter-label">Номер
+                    <span id="ticketTypeSpan">[ТУ/БУ]</span>
+                    <i class="glyphicon glyphicon-info-sign" style="font-size: 12px; color: #005392; cursor: help" title="Допускается использование символа *"></i>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <input id="filter-nomer" type="text" class="form-control" name="filter[ticket]" value="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="filter-users" class="filter-label">Заявитель</label>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" name="filter[username]" id="filter-users" value="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="filter-executors" class="filter-label">Исполнитель</label>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" name="filter[executor]" id="filter-executors" value="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row" style="padding-bottom: 4px">
+                <div class="col-md-1">
+                  <label for="filter_hidden_field" class="filter-label">Услуга </label>
+                </div>
+                <div class="col-md-11">
+                  <div class="input-group">
+                    <input readonly="" id="filter-service" type="text" class="form-control" name="filter[service]" value="">
+                    <span class="input-group-btn">
+                      <button style="height: 34px;" type="button" class="btn btn-default btn-xs" id="openServiceSearch" onclick="$(&#39;#modalServiceSearchWindow&#39;).modal(&#39;show&#39;);">...</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="padding-bottom: 4px">
+                <div class="col-md-12">
+                  <label for="filter_hidden_field" class="filter-label">
+                    СОНО
+                  </label>
+                  <i class="glyphicon glyphicon-remove pull-right" id="clearSonoSearch" style="color: #cecece; cursor: pointer; margin-left: -15px; top: 10px; right: 5px" title="Сброс"></i>
+                  <input id="sonoSearch" type="text" class="form-control pull-right" placeholder="Поиск..." style="width: 100px; display: inline-block;">
+                </div>
+                <div class="col-md-12">
+                  <input type="hidden" class="inittechfilter" value="1">
+                  <input type="hidden" class="filter_hidden_field" name="no" value="">
+                  <input type="hidden" class="filter_hidden_field_service" name="filter[techservice]" value="">
+                  <div id="techfiltertree" style="margin-top: 5px;padding: 5px 0; overflow: auto; border: 1px solid #ccc; border-radius: 5px; height: 180px"></div>
+                </div>
+              </div>
+                            <div class="row">
+                <div class="col-md-12">
+                  <label for="filter_hidden_field" class="filter-label">
+                    ЭКП
+                  </label>
+                  <i class="glyphicon glyphicon-remove pull-right" id="clearEkpSearch" style="color: #cecece; cursor: pointer; margin-left: -15px; top: 10px; right: 5px" title="Сброс"></i>
+                  <input id="ekpSearch" type="text" class="form-control pull-right" placeholder="Поиск..." style="width: 100px; display: inline-block;">
+                </div>
+                <div class="col-md-12">
+                  <input type="hidden" class="filter_hidden_field_ekp" name="ekp" value="">
+                  <div id="ekpfiltertree" style="margin-top: 5px;padding: 5px 0; overflow: auto; border: 1px solid #ccc; border-radius: 5px; height: 180px"></div>
+                </div>
+              </div>
+                          </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="filter_nomer" class="filter-label">Поиск по полю «Описание
+                      проблемы»</label>
+                  </div>
+                  <div class="col-md-12">
+                    <input id="filter-description" type="text" class="form-control" name="filter[description]" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="filter_nomer" class="filter-label">Поиск по полю «Комментарий»</label>
+                  </div>
+                  <div class="col-md-12">
+                    <input id="filter-comment" type="text" class="form-control" name="filter[comment]" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" style="display: none;">
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default filter_clear" data-dismiss="modal">Отключить фильтры
+        </button>
+        <button type="button" class="btn btn-primary filter_go">Фильтровать</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalMessageWindow">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h3>Сообщение</h3>
+      </div>
+      <div class="modal-body text-center">
+        <span id="modalMessageText"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalServiceSearchWindow">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h3>Услуги</h3>
+      </div>
+      <div class="modal-body text-center">
+        <input id="serviceSearch" type="text" class="form-control" placeholder="Поиск...">
+        <div id="techservicefiltertree" style="margin-top: 5px;padding: 5px 0; overflow: auto; border: 1px solid #ccc; border-radius: 5px; height: 360px; text-align: left"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="resetServiceFilter">Сбросить</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Выбрать</button>
+      </div>
+    </div>
+  </div>
+</div>
+			 
+		<!-- The blueimp Gallery widget -->
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls lightboxforcomments" data-filter=":even">
+			<div class="slides"></div>
+			<h3 class="title"></h3>
+			<a class="prev">‹</a>
+			<a class="next">›</a>
+			<a class="close">x</a>
+			<a class="play-pause"></a>
+			<ol class="indicator"></ol>
+		</div>
+		
+		
+        <script src="./Кабинет инженера_files/jquery.min.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/jquery-ui.min.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/bootstrap.min.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/bootstrap-datepicker.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/bootstrap-datepicker.ru.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/bootstrap-treeview.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/bootstrap-multiselect.js.Без названия"></script>
+        <script src="./Кабинет инженера_files/main20150921.js.Без названия"></script>
+
+		<script src="./Кабинет инженера_files/jquery.iframe-transport.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.fileupload.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.fileupload-process.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.fileupload-validate.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.stickytableheaders.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.minicolors.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/tmpl.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/load-image.all.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/canvas-to-blob.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.blueimp-gallery.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/bootstrap3-typeahead.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jstree.min.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.tap.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/jquery.formJson.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/FileSaver.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/modernizr.custom.js.Без названия"></script>
+		<script src="./Кабинет инженера_files/query-builder.standalone.js.Без названия"></script>
+    <script src="./Кабинет инженера_files/query-builder.ru.js.Без названия"></script>
+
+		<!--[if lt IE 9]>
+		  <script>
+			$(document).ready(function(){
+				$(".hiddable1").each(function(){
+					if(!!$(this).parents("td").css("max-width"))
+					{
+						$(this).parents("td").css("width",$(this).parents("td").css("max-width"));
+						$(this).css("width",(parseInt($(this).parents("td").css("max-width"),10)-20) + "px");
+					}
+				});
+			});
+		  </script>
+		<![endif]-->
+		
+  
+
+</body></html>
