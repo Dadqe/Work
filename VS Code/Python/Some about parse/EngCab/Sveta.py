@@ -28,9 +28,6 @@ s.post(url, data=auth, headers=headers, timeout=(5)) #auth Post запрос д�
 while True:
     r=s.get(url+'/tech/new.php?sort=UF_DATECREATED&by=DESC', headers=headers)  #page получение страницы после логирования
 
-    # For test on PC
-    # with open('Lki_new.html', 'w', encoding='utf-8') as file: 
-    #     file.write(r.text)
 
     # # Try on my PC with Lki_new.html
     # with open('E:\Work\VS Code\Python\Some about parse\EngCab\Lki_new.html', encoding='utf-8') as file: 
@@ -38,6 +35,10 @@ while True:
 
     now_time = datetime.datetime.now().replace(microsecond=0)
     delta_time = now_time - datetime.timedelta(hours=3, minutes=5)
+
+    # For test on PC
+    # with open(f'Lki_new{now_time}.html', 'w', encoding='utf-8') as file: 
+    #     file.write(r.text)
 
     # soup = BeautifulSoup(src, "lxml") # создание супа из файла на PC
     soup = BeautifulSoup(r.text, "lxml") # Создание супа сразу напрямую с сайта и парсинг
