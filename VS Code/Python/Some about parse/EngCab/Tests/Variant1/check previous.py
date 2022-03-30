@@ -26,15 +26,16 @@ for bid in get_list_of_bid:
     date_time_bid_object = datetime.datetime.strptime(data_of_bid, '%d.%m.%Y %H:%M:%S') # Привожу к такому формату, с которым можно работать
     check = delta_time < date_time_bid_object < date_time_obj
     
-    if check: # Если проверка check (время заявки попадает в последние пять минут со старта программы) выполняется (True), то надо продолжить работать
+    service = bid.find_all("div", class_="hiddable2")[0].text # Услуга
+    if check and not "Профилактические работы" in service and not service in previous_data:
         service = bid.find_all("div", class_="hiddable2")[0].text # Услуга
-        if not "Профилактические работы" in service and not service in previous_data:
-            date_of_creation = data_of_bid # Дата создания заявки
-            description = bid.find_all("div", class_="hiddable2")[1].text # Описание
-            completion_deadline = bid.find("td", class_="col_dateend").text.strip() # Крайний срок завершения
-            sono = bid.find("td", class_="col_sono").text.strip() # СОНО
-            
-            data.extend([f"[+]{date_of_creation} - {completion_deadline}", service, description, sono, "-----"])
+        # if not "Профилактические работы" in service and not service in previous_data:
+        date_of_creation = data_of_bid # Дата создания заявки
+        description = bid.find_all("div", class_="hiddable2")[1].text # Описание
+        completion_deadline = bid.find("td", class_="col_dateend").text.strip() # Крайний срок завершения
+        sono = bid.find("td", class_="col_sono").text.strip() # СОНО
+        
+        data.extend([f"[+]{date_of_creation} - {completion_deadline}", service, description, sono, "-----"])
         # else:
         #     print("Проф. работы скипнуты, старые заявки пропущены")
         #     continue
@@ -48,6 +49,7 @@ if data:
     with open('data4.txt', "w", encoding='utf-8') as file:
         file.writelines([f"{line}\n" for line in data])
     os.startfile(r'data4.txt')
+    # print(f"Новые заявки были сформированы в {now_time}")
+    print(f"Новые заявки были сформированы в {date_time_obj}")
 
 print(f"{time.time() - start_time} Столько секунд от запуска и до завершения")
-    
