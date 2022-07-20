@@ -28,7 +28,6 @@ s.post(url, data=auth, headers=headers, timeout=(5)) #auth Post запрос д�
 while True:
     r=s.get(url+'/tech/new.php?sort=UF_DATECREATED&by=DESC', headers=headers)  #page получение страницы после логирования
 
-
     # # Try on my PC with Lki_new.html
     # with open('E:\Work\VS Code\Python\Some about parse\EngCab\Lki_new.html', encoding='utf-8') as file: 
     #     src = file.read()
