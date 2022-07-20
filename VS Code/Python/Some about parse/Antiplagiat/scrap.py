@@ -6,7 +6,7 @@ import requests
 #     'cc.granted': '1',
 #     '.AspNetCore.Culture.EP': 'c=ru|uic=ru',
 #     'ASP.NET_SessionId': 'bbh00woqijyxkog4c1jje5tm',
-#     '__RequestVerificationToken': 'nIDHEIAZnec3qvqr2kdopg2dd4IDYzBaHW2NG4Ol7oX-M3t8JEWYvcd0xdFPkyp_fR-Q0iJX30MbHiOB5r5U5E-cd2oIgPRnJ_QNM6EZ4lI1',
+#     '__RequestVerificationToken': '',
 # }
 
 # headers = {
@@ -15,7 +15,7 @@ import requests
 #     'Cache-Control': 'no-cache',
 #     'Connection': 'keep-alive',
 #     # Requests sorts cookies= alphabetically
-#     # 'Cookie': 'current-lang=ru-RU; domain-lang=ru-RU; cc.granted=1; .AspNetCore.Culture.EP=c=ru|uic=ru; ASP.NET_SessionId=bbh00woqijyxkog4c1jje5tm; __RequestVerificationToken=nIDHEIAZnec3qvqr2kdopg2dd4IDYzBaHW2NG4Ol7oX-M3t8JEWYvcd0xdFPkyp_fR-Q0iJX30MbHiOB5r5U5E-cd2oIgPRnJ_QNM6EZ4lI1',
+#     # 'Cookie': 'current-lang=ru-RU; domain-lang=ru-RU; cc.granted=1; .AspNetCore.Culture.EP=c=ru|uic=ru; ASP.NET_SessionId=bbh00woqijyxkog4c1jje5tm; __RequestVerificationToken='',
 #     'Pragma': 'no-cache',
 #     'Referer': 'https://users.antiplagiat.ru/tariffs',
 #     'Sec-Fetch-Dest': 'document',
